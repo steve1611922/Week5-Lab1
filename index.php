@@ -74,6 +74,7 @@
                 foreach($provisionedActivities as $x)
                 {
                     echo "On the ".($y)." of the month ".$x." are available.<br>";
+                    if ($y > 30) {break;}
                     $y ++;
                  /*   echo "On the " .($i+1). " of the month".$provisionedActivities[$i+1]."are available.<br>";
                     echo "On the " .($i+2). " of the month".$provisionedActivities[$i+2]."are available.<br>"; */
