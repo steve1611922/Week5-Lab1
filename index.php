@@ -87,6 +87,7 @@
         do
         {
             $aGood= rand(0,2);
+            echo $provisionedActivities[$aGood];
             switch ($provisionedActivities[$aGood])
                 {
                 case "specs":
