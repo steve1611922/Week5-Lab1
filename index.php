@@ -36,6 +36,21 @@
         if ($myage > 16) { echo $myname.". You may buy specs.<br>";}
         if($myage > 18) {echo $myname.". You may also buy mugs.<br>";}
         if ($myage > 21) {echo $myname.". You may also buy sausage rolls.<br>";}
+        $wantedgood = "mugs";
+        echo "<br>";
+        switch ($wantedgood) {
+            case "specs":
+                echo "You have to be at least 16 to buy specs.";
+                break;
+            case "mugs":
+                echo "You have to be at least 18 to buy mugs.";
+                break;
+            case "sausage rolls":
+                echo "You have to be at least 21 to buy sausage rolls.";
+                break;
+            default:
+                echo "All the hobbits have gone home";
+    }
     ?>
 </p>
 </body>
