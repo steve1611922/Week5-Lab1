@@ -20,7 +20,7 @@
         $myname = "Steve Charlesworth";
         $myage = 50;
         echo "=My name is".$myname."and I am".$myage;
-        echo "<br>"
+        echo "<br>";
         $name = "Steve";
         if ($name == "Simon") {
             print "I know you!";
