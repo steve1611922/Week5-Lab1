@@ -10,11 +10,25 @@
 </head>
 <body>
  <p>
- <?php
- echo "Hello World";
- echo "<br>";
- echo "Hello," . " " . "world" . "!" ."coded another way";
- ?>
+    <?php
+        echo "Hello World";
+        echo "<br>";
+        echo "Hello," . " " . "world" . "!" ."Coded another way";
+        echo "<br>";
+        echo 5 * 7;
+        echo "<br>";
+        $myname = "Steve Charlesworth";
+        $myage = 50;
+        echo "=My name is".$myname."and I am".$myage;
+        echo "<br>"
+        $name = "Steve";
+        if ($name == "Simon") {
+            print "I know you!";
+        }
+        else {
+            print "Who are you?";
+        }
+    ?>
 </p>
 </body>
 </html>
