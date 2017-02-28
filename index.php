@@ -50,7 +50,10 @@
                 break;
             default:
                 echo "All the hobbits have gone home";
-    }
+        }
+        $provisionedActivities = array("specs","mugs", "sausage rolls");
+        foreach($provisionedActivity as $x)
+            { print "<p>$x</p>";}
     ?>
 </p>
 </body>
