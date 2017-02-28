@@ -28,6 +28,14 @@
         else {
             print "Who are you?";
         }
+        echo "<br>";
+        echo "I get printed!";
+        // I don't! I'm a comment.
+        /* I don’t get printed either
+        and neither do I */
+        if ($myage > 16) { print "You many buy specs. <br>";}
+        elseif($myage > 18) {print "You many also buy mugs.<br>";}
+        elseif ($myage > 21) {print "You many also buy sausage rolls.<br>";}
     ?>
 </p>
 </body>
