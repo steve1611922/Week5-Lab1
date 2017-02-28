@@ -65,10 +65,9 @@
         $provisionedActivities[2] = "";
         echo "No more sausage rolls...";
         foreach($provisionedActivities as $x)
-        { print "<p>$x</p>"; } */
-        echo "<br>";
+        { print "<p>$x</p>"; }
         $provisionedActivities = array("specs","mugs","sausage rolls");
-        /* for ($i = 1; $i < 31; $i=$i + 4)
+        for ($i = 1; $i < 31; $i=$i + 4)
             {$y = $i + 1;
                 echo "<br>On the ".($i)." of the month no products are available.<br>";
                 foreach($provisionedActivities as $x)
@@ -76,10 +75,11 @@
                     echo "On the ".($y)." of the month ".$x." are available.<br>";
                     if ($y > 29) {break;}
                     $y ++;
-                 /*   echo "On the " .($i+1). " of the month".$provisionedActivities[$i+1]."are available.<br>";
-                    echo "On the " .($i+2). " of the month".$provisionedActivities[$i+2]."are available.<br>"; */
+                    echo "On the " .($i+1). " of the month".$provisionedActivities[$i+1]."are available.<br>";
+                    echo "On the " .($i+2). " of the month".$provisionedActivities[$i+2]."are available.<br>";
                 }
-            }*/
+            } */
+        $provisionedActivities = array("specs","mugs","sausage rolls");
         $specCount=0;
         $mugsCount=0;
         $rollsCount=0;
