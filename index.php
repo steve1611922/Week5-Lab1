@@ -80,15 +80,15 @@
                 }
             } */
         $provisionedActivities = array("specs","mugs","sausage rolls");
-        $specCount=0;
-        $mugsCount=0;
-        $rollsCount=0;
-        $goodCount=1;
+        $specCount = 0;
+        $mugsCount = 0;
+        $rollsCount = 0;
+        $goodCount = 1;
         do
         {
-            $aGood= rand(0,2);
-            echo $provisionedActivities[$aGood];
-            switch ($provisionedActivities[$aGood])
+            $aGood = rand(0,2);
+            $daysGood = $provisionedActivities[$aGood];
+            switch ($daysGood)
                 {
                 case "specs":
                     if ($specCount < 7)
