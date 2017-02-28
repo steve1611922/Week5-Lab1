@@ -12,6 +12,7 @@
  <p>
  <?php
  echo "Hello World";
+ echo "Hello," . " " . "world" . "!" ."coded another way";
  ?>
 </p>
 </body>
