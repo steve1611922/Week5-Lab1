@@ -34,8 +34,8 @@
         /* I don’t get printed either
         and neither do I */
         if ($myage > 16) { echo $myname." You many buy specs.<br>";}
-        elseif($myage > 18) {echo $myname."You many also buy mugs.<br>";}
-        elseif ($myage > 21) {echo $myname."You many also buy sausage rolls.<br>";}
+        elseif($myage > 18) {echo $myname." You many also buy mugs.<br>";}
+        elseif ($myage > 21) {echo $myname." You many also buy sausage rolls.<br>";}
     ?>
 </p>
 </body>
