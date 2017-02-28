@@ -66,9 +66,9 @@
         echo "No more sausage rolls...";
         foreach($provisionedActivities as $x)
         { print "<p>$x</p>"; } */
-    echo "<br>";
+        echo "<br>";
         $provisionedActivities = array("specs","mugs","sausage rolls");
-        for ($i = 1; $i < 31; $i=$i + 4)
+        /* for ($i = 1; $i < 31; $i=$i + 4)
             {$y = $i + 1;
                 echo "<br>On the ".($i)." of the month no products are available.<br>";
                 foreach($provisionedActivities as $x)
@@ -79,7 +79,43 @@
                  /*   echo "On the " .($i+1). " of the month".$provisionedActivities[$i+1]."are available.<br>";
                     echo "On the " .($i+2). " of the month".$provisionedActivities[$i+2]."are available.<br>"; */
                 }
-            }
+            }*/
+        $specCount=0;
+        $mugsCount=0;
+        $rollsCount=0;
+        $goodCount=1;
+        do
+        {
+            $aGood= rand(0,2);
+            switch ($provisionedActivities[$aGood])
+                {
+                case "specs":
+                    if ($specCount < 7)
+                        {
+                        echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
+                            $specCount ++;
+                            $goodCount ++;
+                        }
+                    break;
+                case "mugs":
+                    if ($mugsCount < 7)
+                    {
+                        echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
+                        $mugsCount ++;
+                        $goodCount ++;
+                    }
+                    break;
+                case "sausage rolls":
+                    $rollsCount ++;
+                    if ($rollsCount < 7)
+                    {
+                        echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
+                        $rollsCount ++;
+                        $goodCount ++;
+                    }
+                }
+        }
+        while ($goodCount <= 28)
     ?>
 </p>
 </body>
