@@ -52,8 +52,17 @@
                 echo "All the hobbits have gone home";
         }
         $provisionedActivities = array("specs","mugs", "sausage rolls");
+        echo "The original array...<br>;"
         foreach($provisionedActivities as $x)
-            { print "<p>$x</p>";}
+            { print "<p>$x</p>"; }
+        $provisionedActivities[2]="hugs";
+        echo "The hugs not mugs...<br>";
+        foreach($provisionedActivities as $x)
+        { print "<p>$x</p>"; }
+        $provisionedActivities[3]="";
+        echo "No more sausage rolls...<br>";
+        foreach($provisionedActivities as $x)
+        { print "<p>$x</p>"; }
     ?>
 </p>
 </body>
