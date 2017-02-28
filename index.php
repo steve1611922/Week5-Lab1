@@ -18,7 +18,7 @@
         echo 5 * 7;
         echo "<br>";
         $myname = "Steve Charlesworth";
-        $myage = 19;
+        $myage = 50;
         echo "My name is " . $myname . " and I am " . $myage;
         echo "<br>";
         $name = "Steve";
@@ -36,7 +36,7 @@
         if ($myage > 16) { echo $myname.". You may buy specs.<br>";}
         if($myage > 18) {echo $myname.". You may also buy mugs.<br>";}
         if ($myage > 21) {echo $myname.". You may also buy sausage rolls.<br>";}
-        $wantedgood = "mugs";
+        $wantedgood = "sausage rolls";
         echo "<br>";
         switch ($wantedgood) {
             case "specs":
