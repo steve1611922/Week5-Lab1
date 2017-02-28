@@ -18,7 +18,7 @@
         echo 5 * 7;
         echo "<br>";
         $myname = "Steve Charlesworth";
-        $myage = 50;
+        $myage = 19;
         echo "My name is " . $myname . " and I am " . $myage;
         echo "<br>";
         $name = "Steve";
@@ -33,9 +33,9 @@
         // I don't! I'm a comment.
         /* I don’t get printed either
         and neither do I */
-        if ($myage > 16) { echo $myname." You may buy specs.<br>";}
-        if($myage > 18) {echo $myname." You may also buy mugs.<br>";}
-        if ($myage > 21) {echo $myname." You may also buy sausage rolls.<br>";}
+        if ($myage > 16) { echo $myname.". You may buy specs.<br>";}
+        if($myage > 18) {echo $myname.". You may also buy mugs.<br>";}
+        if ($myage > 21) {echo $myname.". You may also buy sausage rolls.<br>";}
     ?>
 </p>
 </body>
