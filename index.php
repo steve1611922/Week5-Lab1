@@ -13,7 +13,7 @@
     <?php
         echo "Hello World";
         echo "<br>";
-        echo "Hello," . " " . "world" . "!" ."Coded another way";
+        echo "Hello," . " " . "world" . "!" ." Coded another way";
         echo "<br>";
         echo 5 * 7;
         echo "<br>";
@@ -29,13 +29,13 @@
             print "Who are you?";
         }
         echo "<br>";
-        echo "I get printed!";
+        echo "I get printed! <br>";
         // I don't! I'm a comment.
         /* I don’t get printed either
         and neither do I */
-        if ($myage > 16) { echo $myname." You many buy specs.<br>";}
-        elseif($myage > 18) {echo $myname." You many also buy mugs.<br>";}
-        elseif ($myage > 21) {echo $myname." You many also buy sausage rolls.<br>";}
+        if ($myage > 16) { echo $myname." You may buy specs.<br>";}
+        if($myage > 18) {echo $myname." You may also buy mugs.<br>";}
+        if ($myage > 21) {echo $myname." You may also buy sausage rolls.<br>";}
     ?>
 </p>
 </body>
