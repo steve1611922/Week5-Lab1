@@ -51,18 +51,18 @@
             default:
                 echo "All the hobbits have gone home";
         }
-        $provisionedActivities = array("specs","mugs", "sausage rolls");
+        $provisionedActivities = array("specs","mugs","sausage rolls");
 
         echo "The original array...";
         foreach($provisionedActivities as $x)
             { print "<p>$x</p>"; }
         // hugs not mugs
-        $provisionedActivities[2] = "hugs";
+        $provisionedActivities[1] = "hugs";
         echo "The hugs not mugs...";
         foreach($provisionedActivities as $x)
         { print "<p>$x</p>"; }
         // No sausages
-        $provisionedActivities[3] = "";
+        $provisionedActivities[2] = "";
         echo "No more sausage rolls...";
         foreach($provisionedActivities as $x)
         { print "<p>$x</p>"; }
