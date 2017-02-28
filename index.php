@@ -113,6 +113,7 @@
                         $rollsCount ++;
                         $goodCount ++;
                     }
+                    break;
                 }
         }
         while ($goodCount <= 28)
