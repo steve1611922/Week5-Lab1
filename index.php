@@ -52,7 +52,7 @@
                 echo "All the hobbits have gone home";
         }
         $provisionedActivities = array("specs","mugs", "sausage rolls");
-        foreach($provisionedActivity as $x)
+        foreach($provisionedActivities as $x)
             { print "<p>$x</p>";}
     ?>
 </p>
