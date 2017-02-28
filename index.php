@@ -69,7 +69,7 @@
     echo "<br>";
         $provisionedActivities = array("specs","mugs","sausage rolls");
         for ($i = 1; $i < 31; $i=$i + 4)
-            {$y = $i;
+            {$y = $i + 1;
                 echo "<br>On the ".($i)." of the month no products are available.<br>";
                 foreach($provisionedActivities as $x)
                 {
