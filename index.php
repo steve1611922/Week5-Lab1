@@ -79,7 +79,7 @@
                     echo "On the " .($i+2). " of the month".$provisionedActivities[$i+2]."are available.<br>";
                 }
             } */
-        $provisionedActivities = array("specs","mugs","sausage rolls");
+        $provisionedActivities = array("specs","mugs","sausage_rolls");
         $specCount = 0;
         $mugsCount = 0;
         $rollsCount = 0;
@@ -108,7 +108,7 @@
                         $goodCount ++;
                     }
                     break;
-                case "sausage rolls":
+                case "sausage_rolls":
                     if ($rollsCount < 7)
                     {
                         echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
