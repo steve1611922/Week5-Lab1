@@ -85,7 +85,7 @@
         $rollsCount = 0;
         $goodCount = 1;
         echo "<br><br>";
-        do
+        /*do
         {
             $aGood = rand(0,2);
             switch ($provisionedActivities[$aGood])
@@ -119,12 +119,15 @@
                 }
         }
         while ($goodCount <= 21);
-        echo "No goods left.";
+        echo "No goods left."; */
 
     $players = array("Tom","Dick","Harry","Pinky", "Perky", "Tom", "Jerry", "Daffy", "Bugs Bunny", "Foghorn Leghorn");
     sort($players);
     $winner = $players[rand(0,count($players)-1)];
     echo "<br>The winner is ".strtoupper($winner);
+    $players = array_diff($players, [$winner]);
+    print join(", ", $players);
+
     ?>
 </p>
 </body>
