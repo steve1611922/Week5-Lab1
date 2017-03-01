@@ -100,7 +100,7 @@
                             $goodCount ++;
                         }
                     break;
-                /* case "mugs":
+                case "mugs":
                     if ($mugsCount < 7)
                     {
                         echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
@@ -108,7 +108,7 @@
                         $goodCount ++;
                     }
                     break;
-                case "sausage rolls":
+                /* case "sausage rolls":
                     $rollsCount ++;
                     if ($rollsCount < 7)
                     {
