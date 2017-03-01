@@ -121,10 +121,10 @@
         while ($goodCount <= 21);
         echo "No goods left.";
 
-    $players = array("Tom","Dick", "Harry","Pinky", "Perky", "Tom", "Jerry", "Daffy", "Bugs Bunny", "Foghorn Leghorn");
+    $players = array("Tom","Dick","Harry","Pinky", "Perky", "Tom", "Jerry", "Daffy", "Bugs Bunny", "Foghorn Leghorn");
     sort($playerslayers);
-    $winner=$players[rand(0,10)];
-    echo "<br>The winner is ".$winner;
+    $winner=$players[rand(0,count($players-1))];
+    echo "<br>The winner is ".strtoupper($winner);
 
     ?>
 </p>
