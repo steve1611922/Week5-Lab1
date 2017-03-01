@@ -84,7 +84,7 @@
         $mugsCount = 0;
         $rollsCount = 0;
         $goodCount = 1;
-        echo "<br>";
+        echo "<br><br>";
         do
         {
             $aGood = rand(0,2);
