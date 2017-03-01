@@ -126,7 +126,7 @@
         foreach($provisionedActivities as $x)
         {
             $randPos = rand(0, count($players) - 1);
-            echo "<br>Pos:".$randPos;
+            //echo "<br>Pos:".$randPos;
             $winner = $players[$randPos];
             echo "<br>The winner of ".$x. " is " . strtoupper($winner);
             unset($players[$randPos]);
