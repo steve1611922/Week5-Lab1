@@ -115,6 +115,8 @@
                         $goodCount ++;
                     }
                     break;
+                default:
+                    $goodCount ++;
                 }
         }
         while ($goodCount <= 28)
