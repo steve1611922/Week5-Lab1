@@ -84,13 +84,11 @@
         $mugsCount = 0;
         $rollsCount = 0;
         $goodCount = 1;
+        echo "<br>";
         do
         {
             $aGood = rand(0,2);
-            $daysGood = $provisionedActivities[$aGood];
-            // echo $daysGood;
-            //$goodCount ++;
-            switch ($daysGood)
+            switch ($provisionedActivities[$aGood])
                 {
                 case "specs":
                     if ($specCount < 7)
