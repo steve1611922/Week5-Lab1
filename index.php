@@ -122,7 +122,7 @@
         echo "No goods left.";
 
     $players = array("Tom","Dick","Harry","Pinky", "Perky", "Tom", "Jerry", "Daffy", "Bugs Bunny", "Foghorn Leghorn");
-    sort($playerslayers);
+    sort($players);
     $winner=$players[rand(0,count($players-1))];
     echo "<br>The winner is ".strtoupper($winner);
 
