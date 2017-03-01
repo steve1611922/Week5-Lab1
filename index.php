@@ -88,7 +88,9 @@
         {
             $aGood = rand(0,2);
             $daysGood = $provisionedActivities[$aGood];
-            switch ($daysGood)
+            echo $daysGood;
+            $goodCount ++;
+            /*switch ($daysGood)
                 {
                 case "specs":
                     if ($specCount < 7)
@@ -117,7 +119,7 @@
                     break;
                 default:
                     $goodCount ++;
-                }
+                }*/
         }
         while ($goodCount <= 28)
     ?>
