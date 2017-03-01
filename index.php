@@ -108,19 +108,20 @@
                         $goodCount ++;
                     }
                     break;
-               /* case "sausage_rolls":
+               case "sausage_rolls":
                     if ($rollsCount < 7)
                     {
                         echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
                         $rollsCount ++;
                         $goodCount ++;
                     }
-                    break;*/
+                    break;
                 default:
                     $goodCount ++;
                 }
         }
-        while ($goodCount <= 28)
+        while ($goodCount <= 21)
+        echo "No goods left.";
     ?>
 </p>
 </body>
