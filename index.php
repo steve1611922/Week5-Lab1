@@ -128,7 +128,7 @@
             $winner = $players[rand(0, count($players) - 1)];
             echo "<br>The winner of ".$x. " is " . strtoupper($winner);
             $players = array_diff($players, [$winner]);
-            //print join(", ", $players);
+            echo join(", ", $players)."<br>";
         }
     ?>
 </p>
