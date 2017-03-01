@@ -125,7 +125,6 @@
     sort($players);
     $winner = $players[rand(0,count($players)-1)];
     echo "<br>The winner is ".strtoupper($winner);
-
     ?>
 </p>
 </body>
