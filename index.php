@@ -88,19 +88,19 @@
         {
             $aGood = rand(0,2);
             $daysGood = $provisionedActivities[$aGood];
-            echo $daysGood;
-            $goodCount ++;
-            /*switch ($daysGood)
+            // echo $daysGood;
+            //$goodCount ++;
+            switch ($daysGood)
                 {
                 case "specs":
                     if ($specCount < 7)
                         {
-                        echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
+                            echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
                             $specCount ++;
                             $goodCount ++;
                         }
                     break;
-                case "mugs":
+                /* case "mugs":
                     if ($mugsCount < 7)
                     {
                         echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
@@ -116,10 +116,10 @@
                         $rollsCount ++;
                         $goodCount ++;
                     }
-                    break;
+                    break;*/
                 default:
                     $goodCount ++;
-                }*/
+                }
         }
         while ($goodCount <= 28)
     ?>
