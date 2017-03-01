@@ -121,7 +121,7 @@
         while ($goodCount <= 21);
         echo "No goods left."; */
 
-        $players = array("Tom", "Dick", "Harry", "Pinky", "Perky","Jerry", "Daffy", "Bugs Bunny", "Foghorn Leghorn");
+        $players = array("Tom", "Dick", "Harry", "Pinky", "Perky","Jerry", "Daffy", "Bugs_Bunny", "Foghorn_Leghorn");
         sort($players);
         foreach($provisionedActivities as $x)
         {
