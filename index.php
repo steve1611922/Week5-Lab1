@@ -129,9 +129,9 @@
             echo "<br>Pos:".$randPos;
             $winner = $players[$randPos];
             echo "<br>The winner of ".$x. " is " . strtoupper($winner);
-            $players = array_diff($players, [$winner]);
+            $players = array_diff($players, $winner);
             echo count($players)."  "."   ".join(", ", $players)."<br>";
-            
+
         }
     ?>
 </p>
