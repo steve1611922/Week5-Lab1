@@ -120,7 +120,7 @@
                     $goodCount ++;
                 }
         }
-        while ($goodCount <= 21)
+        while ($goodCount <= 21);
         echo "No goods left.";
     ?>
 </p>
