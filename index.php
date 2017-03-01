@@ -121,13 +121,15 @@
         while ($goodCount <= 21);
         echo "No goods left."; */
 
-    $players = array("Tom","Dick","Harry","Pinky", "Perky", "Tom", "Jerry", "Daffy", "Bugs Bunny", "Foghorn Leghorn");
-    sort($players);
-    $winner = $players[rand(0,count($players)-1)];
-    echo "<br>The winner is ".strtoupper($winner);
-    $players = array_diff($players, [$winner]);
-    print join(", ", $players);
-
+        $players = array("Tom", "Dick", "Harry", "Pinky", "Perky", "Tom", "Jerry", "Daffy", "Bugs Bunny", "Foghorn Leghorn");
+        sort($players);
+        foreach($provisionedActivities as $x)
+        {
+            $winner = $players[rand(0, count($players) - 1)];
+            echo "<br>The winner of ".$x. " is " . strtoupper($winner);
+            $players = array_diff($players, [$winner]);
+            //print join(", ", $players);
+        }
     ?>
 </p>
 </body>
