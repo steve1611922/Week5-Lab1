@@ -94,11 +94,11 @@
                 {
                 case "specs":
                     if ($specCount < 7)
-                        {
-                            echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
-                            $specCount ++;
-                            $goodCount ++;
-                        }
+                    {
+                        echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
+                        $specCount ++;
+                        $goodCount ++;
+                    }
                     break;
                 case "mugs":
                     if ($mugsCount < 7)
@@ -108,15 +108,14 @@
                         $goodCount ++;
                     }
                     break;
-                /* case "sausage rolls":
-                    $rollsCount ++;
+                case "sausage rolls":
                     if ($rollsCount < 7)
                     {
                         echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
                         $rollsCount ++;
                         $goodCount ++;
                     }
-                    break;*/
+                    break;
                 default:
                     $goodCount ++;
                 }
