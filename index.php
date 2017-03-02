@@ -129,14 +129,9 @@
             do
             {
                 $randPos = rand(0, count($players) - 1);
-                echo $randPos."-".$players[$randPos]."-";
             } while (!isset($players[$randPos]));
             $winner = $players[$randPos];
             echo "<br>The winner of ".$x. " is ".strtoupper($winner)."<br>";
-            var_dump(isset($players[$randPos]));
-            unset($players[$randPos]);
-            var_dump(isset($players[$randPos]));
-            echo "<br>Count:".count($players)." Pos:".$randPos." New:".print_r($players)."<br>";
         }
     ?>
 </p>
