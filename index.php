@@ -123,18 +123,17 @@
 
         $players = array("Tom", "Dick", "Harry", "Pinky", "Perky","Jerry", "Daffy", "Bugs_Bunny", "Foghorn Leghorn");
         sort($players);
-        echo "Before:".join(", ", $players)."<br>";
+        echo "Before:".print_r($players)."<br>";
         foreach($provisionedActivities as $x)
         {
             do {
                 $randPos = rand(0, count($players) - 1);
             }
             while ($players[$randPos] = "");
-
             $winner = $players[$randPos];
             echo "<br>The winner of ".$x. " is " . strtoupper($winner)."<br>";
             unset($players[$randPos]);
-            //echo "Chosen:".$players[$randPos]." Count:".count($players)." Pos:".$randPos." New:".join(", ", $players)."<br>";
+            echo "Chosen:".$players[$randPos]." Count:".count($players)." Pos:".$randPos." New:".join(", ", $players)."<br>";
             print_r($players);
         }
     ?>
