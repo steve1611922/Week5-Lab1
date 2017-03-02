@@ -129,7 +129,7 @@
             do
             {
                 $randPos = rand(0, count($players) - 1);
-            } while ($players[$randPos] = "");
+            } while ($players[$randPos] = null);
             $winner = $players[$randPos];
             echo "<br>The winner of ".$x. " is " . strtoupper($winner)."<br>";
             unset($players[$randPos]);
