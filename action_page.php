@@ -1,16 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 1611922
- * Date: 02/03/2017
- * Time: 14:42
- */
     $uname = $_POST["uname"];
     $pws = $_POST["pws"]; 
     if ($uname="steve" and "pwsmysecret") {
+        echo "Setting cookies...";
         setcookie("access_level","standarduser");
         setcookie("customer",$uname);
     } else {
+        echo "Deleting cookies...";
         setcookie('steve','',1);
         setcookie('pws','',1);
         echo "Username or Password error.";
