@@ -25,7 +25,7 @@
     {
         echo "You are are not logged in";
     }
-    displayAccessLevelInformation($_COOKIE["access_level"]);
+    //displayAccessLevelInformation($_COOKIE["access_level"]);
     echo "Done.";
 ?>
  <p>
