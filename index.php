@@ -4,14 +4,19 @@
 </head>
 <body>
 <p>Password Form</p>
-<form>
-    User name:<br>
-    <input type="text" name="username"><br>
-    User password:<br>
-    <input type="password" name="psw">
+<p>Submit button</p>
+<form action="action_page.php">
+    <fieldset>
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" value="Steve" title="firstname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" value="Mr" title="lastname"><br>
+        <input type="submit" value="Submit">
+    </fieldset>
 </form>
  <p>
     <?php
+
         /*echo "Hello World";
         echo "<br>";
         echo "Hello," . " " . "world" . "!" ." Coded another way";
