@@ -149,7 +149,7 @@
     // Cookies
         foreach ($_COOKIE as $cookie_name => $cookie_value)
             {
-                print "$cooki e_name = $cookie_value <br/>";
+                print "$cookie_name = $cookie_value <br/>";
             }
     ?>
 </p>
