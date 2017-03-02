@@ -5,7 +5,6 @@
     <title>Week5-Introduction to PHP- Activity VII</title>
 </head>
 <body>
-<a href="http://example.com/search.html ?query=cat & type=image">Blarg</a>
 <p>
     <?php
     // php code goes here

@@ -6,6 +6,7 @@
 </head>
 <body>
 <p>Week 5 Tutorials</p>
+<a href="intro-VI.php">Intro to PHP  - Activity VI</a>
 <a href="intro.php">Intro to PHP  - Activity VII</a>
 <br>
 <a href="cs-act1.php">Sessions and Cookies - Activity 1</a>
@@ -128,34 +129,6 @@
         use unset to remove previous winners
         use isset to test for empty array element (previous winner) before picking next winner
         */
-        $players = array("Tom", "Dick", "Harry", "Pinky", "Perky","Jerry", "Daffy", "Bugs_Bunny", "Foghorn Leghorn");
-        sort($players);
-        foreach($provisionedActivities as $x)
-        {
-            do
-            {
-                $randPos = rand(0, count($players) - 1);
-            } while (!isset($players[$randPos]));
-            $winner = $players[$randPos];
-            echo "<br>The winner of ".$x. " is ".strtoupper($winner)."<br>";
-            unset($players[$randPos]);
-        }
-        echo "<br>"; echo "W A N T E D";echo "<br>";
-        wanted ($winner,3,5,7);echo "<br>";
-        wanted ($players[8],3,5,7);echo "<br>";
-        wanted ($players[2],3,5,7);echo "<br>";
-    // The wanted poster function.
-    function wanted ($name, $specsOwned, $mugsOwned, $rollsOwned)
-    {
-        echo "<br>Wanted:".strtoupper($name);
-        echo "<br>Known to be in possession of the following items:";
-        echo "<br>Specs(".$specsOwned.")";
-        echo "<br>Mugs(".$mugsOwned.")";
-        echo "<br>Sausage Rolls(".$rollsOwned.")";
-        //echo "<br>Award for capture £".($specsOwned*$mugsOwned*$rollsOwned)/2;
-        $reward = ($specsOwned*$mugsOwned*$rollsOwned)/2;
-        printf("<br>Award for capture £%.2f ", $reward);
-    }
     /*
     // Cookies
         // list all the cookies...
