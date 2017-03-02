@@ -123,12 +123,13 @@
 
         $players = array("Tom", "Dick", "Harry", "Pinky", "Perky","Jerry", "Daffy", "Bugs_Bunny", "Foghorn Leghorn");
         sort($players);
-        echo "Before:".print_r($players)."<br>";
+        //echo "Before:".print_r($players)."<br>";
         foreach($provisionedActivities as $x)
         {
             do
             {
                 $randPos = rand(0, count($players) - 1);
+                echo $randPos;
             } while ($players[$randPos] = null);
             $winner = $players[$randPos];
             echo "<br>The winner of ".$x. " is ".strtoupper($winner)."<br>";
