@@ -132,6 +132,7 @@
             } while (!isset($players[$randPos]));
             $winner = $players[$randPos];
             echo "<br>The winner of ".$x. " is ".strtoupper($winner)."<br>";
+            unset($players[$randPos]);
         }
     ?>
 </p>
