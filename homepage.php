@@ -1,5 +1,5 @@
 <?php
-function displayAccessLevelInformation($access_level) 
+function displayAccessLevelInfo($access_level) 
 {
     if ($access_level == "standarduser") 
     {         
@@ -11,5 +11,4 @@ function displayAccessLevelInformation($access_level)
         echo "<p>You now have access to additional administrative features</p>";     
     } 
 }
-return;
 ?>
