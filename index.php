@@ -146,6 +146,11 @@
         $reward = ($specsOwned*$mugsOwned*$rollsOwned)/2;
         printf("<br>Award for capture £%.2f ", $reward);
     }
+    // Cookies
+        foreach ($_COOKIE as $cookie_name => $cookie_value)
+            {
+                print "$cooki e_name = $cookie_value <br/>";
+            }
     ?>
 </p>
 </body>
