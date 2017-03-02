@@ -129,7 +129,7 @@
             $randPos = rand(0, count($players) - 1);
             //echo "<br>Pos:".$randPos;
             $winner = $players[$randPos];
-            echo "<br>The winner of ".$x. " is " . strtoupper($winner);
+            echo "<br>The winner of ".$x. " is " . strtoupper($winner)."<br>";
             unset($players[$randPos]);
             echo "Count:".count($players)." Pos:".$randPos."--".join(", ", $players)."<br>";
         }
