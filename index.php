@@ -3,14 +3,14 @@
  <head>
 </head>
 <body>
-<p>Password Form</p>
 
 <form action="action_page.php">
     <fieldset>
-        <label for="fname">First Name:</label>
-        <input type="text" name="fname" value="Steve" title="firstname">
-        <label for="lname">Last Name:</label>
-        <input type="text" name="lname" value="Mr" title="lastname">
+        <legend>Enter your username and password.</legend>
+        <label for="uname">Username:</label>
+        <input type="text" name="uname" value="Steve" title="firstname"><br>
+        <label for="pws">Password:</label>
+        <input type="password" name="pws" value="Mr" title="lastname">
         <input type="submit" value="Submit">
     </fieldset>
 </form>
