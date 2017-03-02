@@ -120,10 +120,12 @@
         }
         while ($goodCount <= 21);
         echo "No goods left."; */
-
+        /*
+        use unset to remove previous winners
+        use isset to test for empty array element (previous winner) before picking next winner
+        */
         $players = array("Tom", "Dick", "Harry", "Pinky", "Perky","Jerry", "Daffy", "Bugs_Bunny", "Foghorn Leghorn");
         sort($players);
-        //echo "Before:".print_r($players)."<br>";
         foreach($provisionedActivities as $x)
         {
             do
@@ -134,6 +136,16 @@
             echo "<br>The winner of ".$x. " is ".strtoupper($winner)."<br>";
             unset($players[$randPos]);
         }
+    // The wanted poster function.
+    function wanted ($name, $specsOwned, $mugsOwned, $rollsOwned)
+    {
+        echo "Wanted".$name;
+        echo "Known to be in possession of the following items:";
+        echo "Specs(".$specsOwned.")";
+        echo "Mugs(".$mugsOwned.")";
+        echo "Sausage Rolls(".$rollsOwned.")";
+        echo "Award for capture £".($specsOwned*$mugsOwned*$rollsOwned)/2;
+    }
     ?>
 </p>
 </body>
