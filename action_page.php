@@ -10,10 +10,9 @@
     if ($uname="steve" and "pws=mysecret")
     {
         setcookie("access_level","standarduser");
-        setcookie("customer",$uname);
+        setcookie("customer",$uname);}
         else
-            echo "Username or Password error.";
-    }
+        {   echo "Username or Password error.";}
     // Cookies
     // list all the cookies...
     echo "<br>";
