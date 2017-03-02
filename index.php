@@ -133,6 +133,7 @@
             unset($players[$randPos]);
             echo "Count:"."Pos:".count($players)."  "."   ".join(", ", $players)."<br>";
         }
+    
     ?>
 </p>
 </body>
