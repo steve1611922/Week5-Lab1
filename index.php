@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
      <meta charset="UTF-8">
-     <title>Week5-Lab1</title>
+     <title>Week5-Lab-1</title>
 </head>
 <body>
 <form action="action_page.php" method="post">
@@ -23,7 +23,7 @@
     }
     else
     {
-        echo "your are not logged in";
+        echo "You are are not logged in";
     }
     displayAccessLevelInformation($_COOKIE["access_level"]);
     echo "Done.";
