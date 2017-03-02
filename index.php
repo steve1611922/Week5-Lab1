@@ -5,7 +5,7 @@
 <body>
  <p>
     <?php
-        echo "Hello World";
+        /*echo "Hello World";
         echo "<br>";
         echo "Hello," . " " . "world" . "!" ." Coded another way";
         echo "<br>";
@@ -27,7 +27,7 @@
         // I don't! I'm a comment.
         /* I don’t get printed either
         and neither do I */
-        if ($myage > 16) { echo $myname.". You may buy specs.<br>";}
+        /*if ($myage > 16) { echo $myname.". You may buy specs.<br>";}
         if($myage > 18) {echo $myname.". You may also buy mugs.<br>";}
         if ($myage > 21) {echo $myname.". You may also buy sausage rolls.<br>";}
         $wantedgood = "sausage rolls";
