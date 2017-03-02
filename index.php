@@ -126,6 +126,7 @@
         //echo "Before:".print_r($players)."<br>";
         foreach($provisionedActivities as $x)
         {
+            
             //do
             //{
                 $randPos = rand(0, count($players) - 1);
