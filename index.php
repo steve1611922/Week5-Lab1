@@ -126,11 +126,11 @@
         //echo "Before:".print_r($players)."<br>";
         foreach($provisionedActivities as $x)
         {
-            //do
-            //{
+            do
+            {
                 $randPos = rand(0, count($players) - 1);
                 echo $randPos."-".$players[$randPos]."-";
-            //} while ($players[$randPos] = null);
+            } while ($players[$randPos] = "");
             $winner = $players[$randPos];
             echo "<br>The winner of ".$x. " is ".strtoupper($winner)."<br>";
             unset($players[$randPos]);
