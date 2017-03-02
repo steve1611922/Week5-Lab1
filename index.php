@@ -3,6 +3,13 @@
  <head>
 </head>
 <body>
+<p>Password Form</p>
+<form>
+    User name:<br>
+    <input type="text" name="username"><br>
+    User password:<br>
+    <input type="password" name="psw">
+</form>
  <p>
     <?php
         /*echo "Hello World";
@@ -146,12 +153,17 @@
         $reward = ($specsOwned*$mugsOwned*$rollsOwned)/2;
         printf("<br>Award for capture £%.2f ", $reward);
     }
+    /*
     // Cookies
+        // list all the cookies...
         echo "<br>";
         foreach ($_COOKIE as $cookie_name => $cookie_value)
             {
                 print "$cookie_name = $cookie_value <br/>";
-            }
+            } */
+    // Cookies Activity 1
+
+
     ?>
 </p>
 </body>
