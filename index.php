@@ -142,12 +142,12 @@
     // The wanted poster function.
     function wanted ($name, $specsOwned, $mugsOwned, $rollsOwned)
     {
-        echo "Wanted".$name;
-        echo "Known to be in possession of the following items:";
-        echo "Specs(".$specsOwned.")";
-        echo "Mugs(".$mugsOwned.")";
-        echo "Sausage Rolls(".$rollsOwned.")";
-        echo "Award for capture £".($specsOwned*$mugsOwned*$rollsOwned)/2;
+        echo "<br>Wanted".$name;
+        echo "<br>Known to be in possession of the following items:";
+        echo "<br>Specs(".$specsOwned.")";
+        echo "<br>Mugs(".$mugsOwned.")";
+        echo "<br>Sausage Rolls(".$rollsOwned.")";
+        echo "<br>Award for capture £".($specsOwned*$mugsOwned*$rollsOwned)/2;
     }
     ?>
 </p>
