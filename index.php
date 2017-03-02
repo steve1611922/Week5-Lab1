@@ -142,7 +142,7 @@
     // The wanted poster function.
     function wanted ($name, $specsOwned, $mugsOwned, $rollsOwned)
     {
-        echo "<br>Wanted".$name;
+        echo "<br>Wanted:".strtoupper($name);
         echo "<br>Known to be in possession of the following items:";
         echo "<br>Specs(".$specsOwned.")";
         echo "<br>Mugs(".$mugsOwned.")";
