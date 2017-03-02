@@ -123,6 +123,7 @@
 
         $players = array("Tom", "Dick", "Harry", "Pinky", "Perky","Jerry", "Daffy", "Bugs_Bunny", "Foghorn Leghorn");
         sort($players);
+        echo "Before:"join(", ", $players)."<br>";
         foreach($provisionedActivities as $x)
         {
             $randPos = rand(0, count($players) - 1);
