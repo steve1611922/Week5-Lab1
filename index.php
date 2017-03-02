@@ -131,7 +131,7 @@
                 $randPos = rand(0, count($players) - 1);
             } while ($players[$randPos] = null);
             $winner = $players[$randPos];
-            echo "<br>The winner of ".$x. " is " . strtoupper($winner)."<br>";
+            echo "<br>The winner of ".$x. " is ".strtoupper($winner)."<br>";
             unset($players[$randPos]);
             echo "Count:".count($players)." Pos:".$randPos." New:".print_r($players)."<br>";
         }
