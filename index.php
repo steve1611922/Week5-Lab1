@@ -136,6 +136,9 @@
             echo "<br>The winner of ".$x. " is ".strtoupper($winner)."<br>";
             unset($players[$randPos]);
         }
+        echo "W A N T E D";
+        wanted ($players[1],3,5,7);
+
     // The wanted poster function.
     function wanted ($name, $specsOwned, $mugsOwned, $rollsOwned)
     {
