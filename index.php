@@ -133,7 +133,7 @@
             //} while ($players[$randPos] = "");
             $winner = $players[$randPos];
             echo "<br>The winner of ".$x. " is ".strtoupper($winner)."<br>";
-            unset($randPos);
+            unset($players[$randPos]);
             echo "Count:".count($players)." Pos:".$randPos." New:".print_r($players)."<br>";
         }
     ?>
