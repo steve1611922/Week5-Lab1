@@ -20,4 +20,5 @@
     {
         print "$cookie_name = $cookie_value <br/>";
     }
+    return;
 ?> 
