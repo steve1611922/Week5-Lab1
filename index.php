@@ -150,11 +150,6 @@
         //echo "<br>Award for capture £".($specsOwned*$mugsOwned*$rollsOwned)/2;
         $reward = ($specsOwned*$mugsOwned*$rollsOwned)/2;
         printf("<br>Award for capture £%.2f ", $reward);
-        $count = 3;
-        $cost = 25.2;
-        $format = "The %d items cost $%.2f.";
-        printf($format, $count, $cost);
-
     }
     ?>
 </p>
