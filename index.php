@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<form action="action_page.php">
+<form action="action_page.php" method="post">
     <fieldset>
         <legend>Enter your username and password.</legend>
         <label for="uname">Username:</label>
