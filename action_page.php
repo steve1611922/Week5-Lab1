@@ -1,6 +1,7 @@
 <?php
     $uname = $_POST["uname"];
-    $pws = $_POST["pws"]; 
+    $pws = $_POST["pws"];
+    echo $uname.$pws;
     if ($uname="steve" and $pws="mysecret") {
         echo "Setting cookies...";
         setcookie("access_level","standarduser");
