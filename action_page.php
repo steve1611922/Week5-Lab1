@@ -7,12 +7,12 @@
  */
     $uname = $_POST["uname"];
     $pws = $_POST["pws"]; 
-    if ($uname="steve" and "pws=mysecret")
-    {
+    if ($uname="steve" and "pwsmysecret") {
         setcookie("access_level","standarduser");
-        setcookie("customer",$uname);}
-        else
-        {   echo "Username or Password error.";}
+        setcookie("customer",$uname);
+    } else {
+        echo "Username or Password error.";
+    }
     // Cookies
     // list all the cookies...
     echo "<br>";
