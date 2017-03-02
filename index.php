@@ -4,13 +4,13 @@
 </head>
 <body>
 <p>Password Form</p>
-<p>Submit button</p>
+
 <form action="action_page.php">
     <fieldset>
-        <label for="fname">First Name:</label><br>
-        <input type="text" name="fname" value="Steve" title="firstname"><br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" name="lname" value="Mr" title="lastname"><br>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" value="Steve" title="firstname">
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" value="Mr" title="lastname">
         <input type="submit" value="Submit">
     </fieldset>
 </form>
