@@ -1,11 +1,11 @@
 <?php
-    $uname = $_POST["uname"];
-    $pws = $_POST["pws"];
-    echo $uname.$pws;
-    if ($uname="steve" and $pws="mysecret") {
+    $f_uname = $_POST["uname"];
+    $f_pws = $_POST["pws"];
+    echo $f_uname.$f_pws;
+    if ($f_uname="steve" and $f_pws="mysecret") {
         echo "Setting cookies...";
         setcookie("access_level","standarduser");
-        setcookie("customer",$uname);
+        setcookie("customer",$f_uname);
     } else {
         echo "Deleting cookies...";
         setcookie('steve','',1);
