@@ -139,7 +139,7 @@
         echo "<br>"; echo "W A N T E D";echo "<br>";
         wanted ($winner,3,5,7);echo "<br>";
         wanted ($players[8],3,5,7);echo "<br>";
-        wanted ($players[3],3,5,7);echo "<br>";
+        wanted ($players[2],3,5,7);echo "<br>";
     // The wanted poster function.
     function wanted ($name, $specsOwned, $mugsOwned, $rollsOwned)
     {
