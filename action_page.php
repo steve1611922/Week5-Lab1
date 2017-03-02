@@ -11,6 +11,8 @@
         setcookie("access_level","standarduser");
         setcookie("customer",$uname);
     } else {
+        setcookie('steve','',1);
+        setcookie('pws','',1);
         echo "Username or Password error.";
     }
     // Cookies
