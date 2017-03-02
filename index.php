@@ -8,10 +8,10 @@
     <fieldset>
         <legend>Enter your username and password.</legend>
         <label for="uname">Username:</label>
-        <input type="text" name="uname" value="Steve" title="firstname"><br>
+        <input type="text" name="uname" value="steve" title="firstname"><br>
         <label for="pws">Password:</label>
-        <input type="password" name="pws" value="Mr" title="lastname">
-        <input type="submit" value="Submit">
+        <input type="password" name="pws" value="mysecret" title="lastname"><br>
+        <input type="submit" value="Submit"><br>
     </fieldset>
 </form>
  <p>
