@@ -131,7 +131,7 @@
             $winner = $players[$randPos];
             echo "<br>The winner of ".$x. " is " . strtoupper($winner)."<br>";
             unset($players[$randPos]);
-            echo "Count:".count($players)." Pos:".$randPos."--".join(", ", $players)."<br>";
+            echo "Count:".count($players)." Pos:".$randPos."New:".join(", ", $players)."<br>";
         }
     ?>
 </p>
