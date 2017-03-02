@@ -5,9 +5,7 @@
  * Date: 02/03/2017
  * Time: 14:42
  */
-<?php 
-    $uname = $_POST["uname"]; 
+    $uname = $_POST["uname"];
     $pws = $_POST["pws"]; 
     echo $uname . $pws;
-
 ?> 
