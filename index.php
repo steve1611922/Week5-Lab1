@@ -1,9 +1,10 @@
 <! DOCTYPE html >
-<html>
+<html lang="en">
  <head>
+     <meta charset="UTF-8">
+     <title>Week5-Lab1</title>
 </head>
 <body>
-
 <form action="action_page.php" method="post">
     <fieldset>
         <legend>Enter your username and password.</legend>
@@ -14,6 +15,19 @@
         <input type="submit" value="Submit"><br>
     </fieldset>
 </form>
+<?php
+    echo "Hello ".$uname;
+    if (isset($_COOKIE["access_level"]))
+    {
+        echo "Your access level is " . $_COOKIE["access_level"];
+    }
+    else
+    {
+        echo "your are not logged in";
+    }
+    displayAccessLevelInformation($_COOKIE["access_level"]);
+    echo "Done.";
+?>
  <p>
     <?php
 
