@@ -1,6 +1,5 @@
 <?php
 //Start the session
-session_start();
 $_SESSION["session_level"]="standarduser";
 $_SESSION["customer"]=$f_uname;
 
