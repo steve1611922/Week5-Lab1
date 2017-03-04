@@ -8,7 +8,7 @@
 <!--a href="http://example.com/search.html ?query=cat & type=image">http://example.com/search.html</a-->
 <p>
 <?php
-    echo "<a href=\"http://example.com/search.html ?query=cat & type=image\">http://example.com/search.html</a>;"
+    echo "<a href=\"http://example.com/search.html ?query=cat & type=image\">http://example.com/search.html</a>";
     // php code goes here
     $query = $_GET["query"];
     $type = $_GET["type"];
