@@ -14,9 +14,7 @@
     echo "Setting cookies...";
     setcookie("access_level","standarduser");
     setcookie("customer",$f_uname);
-    
     echo "<br>";
-    
     echo "You can check your access level by visiting this link<br>";
     print( '<a href="homepage.php">Check access Level</a>' );
 ?>
