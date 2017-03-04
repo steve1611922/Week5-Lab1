@@ -1,23 +1,28 @@
-<! DOCTYPE html >
+    `<! DOCTYPE html >
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Intro to PHP - Activity II</title>
 </head>
 <body>
-<p>Select only one</p>
-$wantedgood = null
-<input type="radio" name="wantedgood" value="specs">
-Specs
-<br>
-<input type="radio" name="wantedgood" value="mugs">
-Mugs
-<input type="radio" name="wantedgood" value="sausage rolls">
-Sausage Rolls
+<form method="post">
+    <fieldset>
+        <legend>Select only one</legend>
+        <label for="wantedgood">Specs</label>
+        <input type="radio" name="wantedgood" value="specs">
+        <label for="wantedgood">Mugs</label>
+        <input type="radio" name="wantedgood" value="mugs">
+        <label for="wantedgood">Sausage Rolls</label>
+        <input type="radio" name="wantedgood" value="sausage rolls">
+        <br>
+        <input type="submit" value="Choose"><br>
+    </fieldset>
+</form>
 <p>
     <?php
     // php code goes here
     //$wantedgood = "sausage rolls";
+    $wantedgood = $_POST["wantedgood"];
     echo "<br>";
     switch ($wantedgood) {
         case "specs":
