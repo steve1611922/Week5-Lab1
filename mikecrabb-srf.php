@@ -23,7 +23,7 @@ else {
     echo "an error has occurred";
 }
 ?>
-<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="get">
+<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
     <fieldset>
         <legend>Enter your details</legend>
         <label>Forename</label> <input type="text" name="forename" title="forename"> 
