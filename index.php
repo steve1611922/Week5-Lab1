@@ -5,13 +5,12 @@
      <title>Week5-Lab-1</title>
 </head>
 <body>
-<p>Week 5 Tutorials</p>
-<a href="intro-VI.php">Intro to PHP  - Activity VI</a>
-<a href="intro.php">Intro to PHP  - Activity VII</a>
-<br>
-<a href="cs-act1.php">Sessions and Cookies - Activity 1</a>
-<br>
-<a href="srf-task1.php">Self referencing forms - Task 1</a>
+<p>Week 5 Tutorials</p><br>
+<a href="intro-i.php">Intro to PHP Activity I</a><br>
+<a href="intro-vi.php">Intro to PHP  - Activity VI</a><br>
+<a href="intro.php">Intro to PHP  - Activity VII</a><br>
+<a href="cs-act1.php">Sessions and Cookies - Activity 1</a><br>
+<a href="srf-task1.php">Self referencing forms - Task 1</a><br>
 
 <p>
     <?php
@@ -38,9 +37,7 @@
         // I don't! I'm a comment.
         /* I don’t get printed either
         and neither do I */
-        /*if ($myage > 16) { echo $myname.". You may buy specs.<br>";}
-        if($myage > 18) {echo $myname.". You may also buy mugs.<br>";}
-        if ($myage > 21) {echo $myname.". You may also buy sausage rolls.<br>";}
+
         $wantedgood = "sausage rolls";
         echo "<br>";
         switch ($wantedgood) {
