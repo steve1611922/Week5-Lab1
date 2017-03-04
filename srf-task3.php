@@ -19,7 +19,7 @@
 <p>
     <?php
     $fmethod = $_SERVER["REQUEST_METHOD"];
-    if ($fmethod="POST")
+    if ($fmethod === "POST")
     {
         $fname = $_POST["fname"];
         $lname = $_POST["lname"];
@@ -29,7 +29,7 @@
         echo "Your name is ".$fname." ".$lname.".<br>";
         echo "You are ".$gender.".<br>";
         echo "Your superpower is ".$power.".<br>";
-    }elseif ($fmethod="GET")
+    }elseif ($fmethod === "GET")
     {
         $fname = $_GET["fname"];
         $lname = $_GET["lname"];
@@ -39,7 +39,7 @@
         echo "Your name is ".$fname." ".$lname.".<br>";
         echo "You are ".$gender.".<br>";
         echo "Your superpower is ".$power.".<br>";
-    }
+    }esle  {echo "impossible";}
     ?>
 </p>
 </body>
