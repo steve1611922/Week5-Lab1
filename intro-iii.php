@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Intro to PHP - Activity III</title>
+    <title>Intro to PHP - Activity III and IV</title>
 </head>
 <body>
 <p>
@@ -38,6 +38,12 @@
                 }
             }
     */
+        for ($i=1; $i=30; $i++)
+        {
+            if (fmod($i,2)== 0) {echo "On the ".($i)." of the month Specs are available.<br>";}
+            if (fmod($i,3)== 0) {echo "On the ".($i)." of the month Mugs are available.<br>";}
+            if (fmod($i,4)== 0) {echo "On the ".($i)." of the month Sausage Rolls are available.<br>";}
+        }
     ?>
 </p>
 </body>
