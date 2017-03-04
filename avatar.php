@@ -16,6 +16,7 @@
     echo "Your name is ".$fname." ".$lname.".<br>";
     echo "You are ".$gender.".<br>";
     echo "Your superpower is ".$power.".<br>";
+    echo "Method was:".$_SERVER["request_method"];
     ?>
 </p>
 </body>
