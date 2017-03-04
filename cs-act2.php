@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Week5-Cookies - Activity 1</title>
+    <title>Week5-Sessions - Activity 2</title>
 </head>
 <body>
 <p>
-<?php
-if (isset($_COOKIE["access_level"]))
-{
-    echo "Deleting cookies...";
-    setcookie("access_level","",time()-3600);
-    setcookie("customer","",time()-3600);
-}
+    <?php
+    if (isset($_COOKIE["access_level"]))
+    {
+        echo "Deleting cookies...";
+        setcookie("access_level","",time()-3600);
+        setcookie("customer","",time()-3600);
+    }
 
-//displayAccessLevelInfo($_COOKIE["access_level"]);
-echo "All the cookies... <br>";
-foreach ($_COOKIE as $cookie_name => $cookie_value) {
-    print "$cookie_name = $cookie_value <br/>";
-}
-?>
+    //displayAccessLevelInfo($_COOKIE["access_level"]);
+    echo "All the cookies... <br>";
+    foreach ($_COOKIE as $cookie_name => $cookie_value) {
+        print "$cookie_name = $cookie_value <br/>";
+    }
+    ?>
 </p>
 <p>
 <form action="action_page.php" method="post" id="login">
