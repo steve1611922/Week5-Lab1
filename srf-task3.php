@@ -5,7 +5,7 @@
     <title>Self Referencing Form - Task 3</title>
 </head>
 <body>
-<form action="avatar.php" method="post">
+<form method="post">
     <fieldset>
         <legend>Super hero, enter your details...</legend>
         <label for="fname">First Name:</label><input type="text" name="fname" value=""><br>
