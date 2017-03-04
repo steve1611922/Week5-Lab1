@@ -27,6 +27,8 @@
     foreach ($_COOKIE as $cookie_name => $cookie_value) {
         print "$cookie_name = $cookie_value <br/>";
     }
+    echo "You can check your access level by visiting this link<br>";
+    print( '<a href="homepage.php">Earth</a>' );
 ?>
 </p>
 </body>
