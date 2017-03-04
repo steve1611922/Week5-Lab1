@@ -22,10 +22,12 @@
     //$myname="Steve";
     $myname = $_POST["myname"];
     $myage = $_POST["myage"];
-    if ($myage > 16) { echo ucfirst($myname).", ou may buy specs.<br>";}
-    if($myage > 18) {echo ucfirst($myname).", you may also buy mugs.<br>";}
-    if ($myage > 21) {echo ucfirst($myname).", you may also buy sausage rolls.<br>";}
-    else {echo "You are too young too enjoy life...";}
+    if ($myage <= 16){ echo "You are to young to enjoy life...";}
+    else {
+        if ($myage > 16) { echo ucfirst($myname).", ou may buy specs.<br>";}
+        if ($myage > 18) {echo ucfirst($myname).", you may also buy mugs.<br>";}
+        if ($myage > 21) {echo ucfirst($myname).", you may also buy sausage rolls.<br>";}
+    }
 ?>
 </p>
 </body>
