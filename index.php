@@ -9,15 +9,16 @@
 <a href="intro-i.php">Intro to PHP Activity I</a><br>
 <a href="intro-ii.php">Intro to PHP Activity II</a><br>
 <a href="intro-iii.php">Intro to PHP Activity III & IV</a><br>
+<a href="intro-v.php">Intro to PHP  - Activity V</a><br>
 <a href="intro-vi.php">Intro to PHP  - Activity VI</a><br>
 <a href="intro.php">Intro to PHP  - Activity VII</a><br>
 <a href="cs-act1.php">Sessions and Cookies - Activity 1</a><br>
 <a href="srf-task1.php">Self referencing forms - Task 1</a><br>
+<a href="srf-task1.php">Self referencing forms - Task 1</a><br>
 
 <p>
     <?php
-
-        /*echo "Hello World";
+        echo "Hello World";
         echo "<br>";
         echo "Hello," . " " . "world" . "!" ." Coded another way";
         echo "<br>";
@@ -39,63 +40,16 @@
         // I don't! I'm a comment.
         /* I don’t get printed either
         and neither do I */
-
-        $provisionedActivities = array("specs","mugs","sausage rolls");
-        $specCount = 0;
-        $mugsCount = 0;
-        $rollsCount = 0;
-        $goodCount = 1;
-        echo "<br><br>";
-        /*do
-        {
-            $aGood = rand(0,2);
-            switch ($provisionedActivities[$aGood])
-                {
-                case "specs":
-                    if ($specCount < 7)
-                    {
-                        echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
-                        $specCount ++;
-                        $goodCount ++;
-                    }
-                    break;
-                case "mugs":
-                    if ($mugsCount < 7)
-                    {
-                        echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
-                        $mugsCount ++;
-                        $goodCount ++;
-                    }
-                    break;
-               case "sausage rolls":
-                    if ($rollsCount < 7)
-                    {
-                        echo "On the " .($goodCount). " of the month " .$provisionedActivities[$aGood]. " are available.<br>";
-                        $rollsCount ++;
-                        $goodCount ++;
-                    }
-                    break;
-                default:
-                    $goodCount ++;
-                }
-        }
-        while ($goodCount <= 21);
-        echo "No goods left."; */
-        /*
-        use unset to remove previous winners
-        use isset to test for empty array element (previous winner) before picking next winner
-        */
-    /*
-    // Cookies
+     
+        //use unset to remove previous winners
+        //use isset to test for empty array element (previous winner) before picking next winner
+        // Cookies
         // list all the cookies...
         echo "<br>";
         foreach ($_COOKIE as $cookie_name => $cookie_value)
             {
                 print "$cookie_name = $cookie_value <br/>";
-            } */
-    // Cookies Activity 1
-
-
+            }
     ?>
 </p>
 </body>
