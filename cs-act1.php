@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Week5-Lab-1</title>
+    <title>Week5-Sessions and Cookies - Activity 1</title>
 </head>
 <body>
 <p>
