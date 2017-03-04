@@ -35,7 +35,7 @@
             echo "You have to be at least 21 to buy sausage rolls.";
             break;
         default:
-            echo "All the hobbits have gone home";
+            echo "It says choose one .... !";
     }
     ?>
 </p>
