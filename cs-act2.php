@@ -7,22 +7,13 @@
 <body>
 <p>
     <?php
-    if (isset($_COOKIE["access_level"]))
-    {
-        echo "Deleting cookies...";
-        setcookie("access_level","",time()-3600);
-        setcookie("customer","",time()-3600);
-    }
-
-    //displayAccessLevelInfo($_COOKIE["access_level"]);
-    echo "All the cookies... <br>";
-    foreach ($_COOKIE as $cookie_name => $cookie_value) {
-        print "$cookie_name = $cookie_value <br/>";
-    }
+    echo "All the session data... <br>";
+    foreach ($_SESSION as $key=>$val)
+        echo $key. ": ".$val. "<br>";
     ?>
 </p>
 <p>
-<form action="action_page.php" method="post" id="login">
+<form action="session_page.php" method="post" id="login">
     <fieldset>
         <legend>Enter your username and password.</legend>
         <label for="uname">Username:</label>
