@@ -8,19 +8,19 @@
 <p>
     <?php
     // php code goes here
-    displayAccessLevelInfo($_SESSION["access_level"]);
+    displayAccessLevelInfo($_SESSION["session_level"]);
     // Cookies
     // list all the cookies...
     echo "All the session data... <br>";
     foreach ($_SESSION as $key=>$val)
         echo $key. ": ".$val. "<br>";
-    function displaySessionInfo($access_level)
+    function displaySessionInfo($session_level)
     {
-        if ($_SESSION["access_level"] == "standarduser")
+        if ($session_level === "standarduser")
         {
             echo "<p>You are currently logged in as a standard user</p>";
         }
-        elseif ($_SESSION["access_level"] == "root")
+        elseif ("session_level" === "root")
         {
             echo "<p>You are currently logged in as a root user</p>";
             echo "<p>You now have access to additional administrative features</p>";
