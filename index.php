@@ -7,6 +7,7 @@
 <body>
 <p>Week 5 Tutorials</p><br>
 <a href="intro-i.php">Intro to PHP Activity I</a><br>
+<a href="intro-ii.php">Intro to PHP Activity II</a><br>
 <a href="intro-vi.php">Intro to PHP  - Activity VI</a><br>
 <a href="intro.php">Intro to PHP  - Activity VII</a><br>
 <a href="cs-act1.php">Sessions and Cookies - Activity 1</a><br>
@@ -38,21 +39,7 @@
         /* I don’t get printed either
         and neither do I */
 
-        $wantedgood = "sausage rolls";
-        echo "<br>";
-        switch ($wantedgood) {
-            case "specs":
-                echo "You have to be at least 16 to buy specs.";
-                break;
-            case "mugs":
-                echo "You have to be at least 18 to buy mugs.";
-                break;
-            case "sausage rolls":
-                echo "You have to be at least 21 to buy sausage rolls.";
-                break;
-            default:
-                echo "All the hobbits have gone home";
-        }
+        
         /* // the original array
         $provisionedActivities = array("specs","mugs","sausage rolls");
         echo "The original array...";
