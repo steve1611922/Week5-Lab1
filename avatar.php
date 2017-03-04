@@ -16,8 +16,8 @@
     echo "Your name is ".$fname." ".$lname.".<br>";
     echo "You are ".$gender.".<br>";
     echo "Your superpower is ".$power.".<br>";
-    echo "Method was:".$_SERVER["REQUEST_METHOD"];
-    echo "Self is:".$_SERVER["PHP_SELF"];
+    echo "<br>Method was:".$_SERVER["REQUEST_METHOD"];
+    echo "<br>Self is:".$_SERVER["PHP_SELF"];
     ?>
 </p>
 </body>
