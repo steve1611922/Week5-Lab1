@@ -9,14 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] ==="GET") {
     //get code
     $forename = $_GET["forename"];
     $surname = $_GET["surname"];
-    print ("Hello {$forename} {$surname}");
+    print ("Get Hello {$forename} {$surname}");
 
 }
 elseif ($_SERVER["REQUEST_METHOD"]=== "POST"){
     //post code
     $forename = $_POST["forename"];
     $surname = $_POST["surname"];
-    print ("Hello {$forename} {$surname}");
+    print ("Post Hello {$forename} {$surname}");
 }
 else {
     // can never happen
