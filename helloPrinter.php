@@ -8,7 +8,7 @@
 <p>
     <?php
     $query=$_GET["planet"];
-    echo "hello".$planet
+    echo "hHllo ".$planet
     ?>
 </p>
 </body>

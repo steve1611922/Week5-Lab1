@@ -9,7 +9,7 @@
 <p>
 <?php
     // php code goes here
-    print( '<a href="http://example.com/search.html ?query=cat & type=image">example.com</a>' );
+    print( '<a href="http://example.com/search.html?query=cat&]type=image">example.com</a>' );
     $query = $_GET["query"];
     $type = $_GET["type"];
     echo "The query is " . $query . "and the type is " . $type;

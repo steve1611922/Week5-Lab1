@@ -7,10 +7,13 @@
 <body>
 <p>
     <?php
-        echo "Where would you like to say hello?";
-        print( '<a href="helloPrinter.php?planet=Earth">Earth</a>' );
-        print( '<a href="helloPrinter.php?planet=Mars">Mars</a>' );
-        print( '<a href="helloPrinter.php?planet=Uranus">Uranus</a>' );
+    echo "Where would you like to say hello?";
+    print( '<a href="helloPrinter.php?planet=Earth">Earth</a>' );
+    echo "<br>";
+    print( '<a href="helloPrinter.php?planet=Mars">Mars</a>' );
+    echo "<br>";
+    print( '<a href="helloPrinter.php?planet=Uranus">Uranus</a>' );
+    echo "<br>";
     ?>
 </p>
 </body>
