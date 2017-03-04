@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Intro to PHP - Activity III and V</title>
 </head>
 <body>
 <p>

@@ -11,7 +11,7 @@
 <a href="intro-iii.php">Intro to PHP Activity III & IV</a><br>
 <a href="intro-v.php">Intro to PHP  - Activity V</a><br>
 <a href="intro-vi.php">Intro to PHP  - Activity VI</a><br>
-<a href="intro.php">Intro to PHP  - Activity VII</a><br>
+<a href="intro-vii.php">Intro to PHP  - Activity VII</a><br>
 <a href="cs-act1.php">Sessions and Cookies - Activity 1</a><br>
 <a href="srf-task1.php">Self referencing forms - Task 1</a><br>
 <a href="srf-task1.php">Self referencing forms - Task 1</a><br>

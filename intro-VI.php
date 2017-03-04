@@ -9,6 +9,7 @@
     <?php
     // php code goes here
     $players = array("Tom", "Dick", "Harry", "Pinky", "Perky","Jerry", "Daffy", "Bugs_Bunny", "Foghorn Leghorn");
+    $provisionedActivities = array("specs","mugs","sausage rolls");
     sort($players);
     foreach($provisionedActivities as $x)
     {
