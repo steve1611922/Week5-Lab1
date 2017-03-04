@@ -26,9 +26,9 @@ foreach ($_COOKIE as $cookie_name => $cookie_value) {
     <fieldset>
         <legend>Enter your username and password.</legend>
         <label for="uname">Username:</label>
-        <input type="text" name="uname" value="steve" title="firstname" autofocus required><br><br>
+        <input type="text" name="uname" title="firstname" autofocus required><br><br>
         <label for="pws">Password:</label>
-        <input type="password" name="pws" value="mysecret" title="lastname" required><br>
+        <input type="password" name="pws" title="lastname" required><br>
         <input type="submit" value="Submit"><br>
     </fieldset>
 </form>
