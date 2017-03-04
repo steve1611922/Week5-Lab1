@@ -28,6 +28,11 @@
     }
     //displayAccessLevelInfo($_COOKIE["access_level"]);
     echo "Done.";
+echo "<br>";
+echo "All the cookies... <br>";
+foreach ($_COOKIE as $cookie_name => $cookie_value) {
+    print "$cookie_name = $cookie_value <br/>";
+}
 ?>
 </p>
 </body>
