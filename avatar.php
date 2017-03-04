@@ -11,10 +11,10 @@
     $fname = $_POST["fname"];
     $lname = $_POST["lname"];
     $gender = $_POST["gender"];
-    $super = $_POST["super"];
-    echo "Your name is ".$fname." ".$lname."<br>";
-    echo "You are ".$gender"<br>";
-    echo "Your superpower is ".$super"<br>";
+    $power = $_POST["power"];
+    echo "Your name is ".$fname." ".$lname.".<br>";
+    echo "You are ".$gender.".<br>";
+    echo "Your superpower is ".$power.".<br>";
     ?>
 </p>
 </body>
