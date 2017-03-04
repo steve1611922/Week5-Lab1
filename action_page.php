@@ -11,24 +11,14 @@
     $f_uname = $_POST["uname"];
     $f_pws = $_POST["pws"];
     echo $f_uname.$f_pws;
-    if ($f_uname="steve" and $f_pws="mysecret") {
-        echo "Setting cookies...";
-        setcookie("access_level","standarduser");
-        setcookie("customer",$f_uname);
-    } else {
-        echo "Deleting cookies...";
-        setcookie("access_level","",time()-3600);
-        setcookie("customer","",time()-3600);
-        echo "Username or Password error.";
-    }
-    // Cookies
-    // list all the cookies...
+    echo "Setting cookies...";
+    setcookie("access_level","standarduser");
+    setcookie("customer",$f_uname);
+    
     echo "<br>";
-    foreach ($_COOKIE as $cookie_name => $cookie_value) {
-        print "$cookie_name = $cookie_value <br/>";
-    }
+    
     echo "You can check your access level by visiting this link<br>";
-    print( '<a href="homepage.php">Earth</a>' );
+    print( '<a href="homepage.php">Check access Level</a>' );
 ?>
 </p>
 </body>

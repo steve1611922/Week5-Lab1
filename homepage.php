@@ -9,7 +9,12 @@
     <?php
     // php code goes here
     displayAccessLevelInfo($_COOKIE["access_level"]);
-
+    // Cookies
+    // list all the cookies...
+    Echo "All the cookies...<br>";
+    foreach ($_COOKIE as $cookie_name => $cookie_value) {
+        print "$cookie_name = $cookie_value <br/>";
+    }
     function displayAccessLevelInfo($access_level)
     {
         if ($access_level == "standarduser")
