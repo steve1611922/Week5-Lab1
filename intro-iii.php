@@ -38,7 +38,7 @@
                 }
             }
     */
-        for ($i=1; $i=30; $i++)
+        for ($i=1; $i<=30; $i++)
         {
             if (fmod($i,2)== 0) {echo "On the ".($i)." of the month Specs are available.<br>";}
             if (fmod($i,3)== 0) {echo "On the ".($i)." of the month Mugs are available.<br>";}
