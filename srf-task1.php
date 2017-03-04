@@ -8,14 +8,13 @@
 <!--a href="http://example.com/search.html ?query=cat & type=image">http://example.com/search.html</a-->
 <p>
 <?php
-    echo "<a href="http://example.com/search.html ?query=cat & type=image\">http://example.com/search.html</a>";
     // php code goes here
+    print( '<a href="http://example.com/search.html ?query=cat & type=image">example.com</a>' );
     $query = $_GET["query"];
     $type = $_GET["type"];
     echo "The query is " . $query . "and the type is " . $type;
-?>
-<?php
-echo "Where would you like to say hello?";
+    echo "<br>";
+    print( '<a href="helloSelector.php">Go to Hello Selector</a>' );
 ?>
 </p>
 </body>
