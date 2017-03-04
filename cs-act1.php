@@ -9,7 +9,9 @@
 <?php
 if (isset($_COOKIE["access_level"]))
 {
-    echo "Your access level is " . $_COOKIE["access_level"];
+    echo "Deleting cookies...";
+    setcookie("access_level","",time()-3600);
+    setcookie("customer","",time()-3600);
 }
 
 //displayAccessLevelInfo($_COOKIE["access_level"]);
