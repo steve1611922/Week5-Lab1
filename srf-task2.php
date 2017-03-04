@@ -11,7 +11,7 @@
         <label for="fname">First Name:</label><input type="text" name="fname" value=""><br>
         <label for="lname">Last Name:</label><input type="text" name="lname" value=""><br>
         <label for="gender">Male:</label><input type="radio" name="gender" value="male"><br>
-        <label for="gender">Female:</label><input type="radio" name="gender" value="female">
+        <label for="gender">Female:</label><input type="radio" name="gender" value="female"><br>
         <label for="power">Superpower:</label><input type="text" name="power" value=""><br>
         <input type="submit" value="Register" />
     </fieldset>
