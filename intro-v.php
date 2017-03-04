@@ -8,6 +8,12 @@
 <p>
     <?php
     // php code goes here
+    /*The previous effort to only have specs, mugs, and sausage rolls available on certain days failed.
+    There were too many days where nothing was on offer to the good people of Aberdeen!
+    It has been decided that a random good will be offered each day but that there is only a limited stock
+    (7 items) of each item available. Once one good runs out, all supply for the rest of the month is cut.
+    Create a page that will print out something similar to the following: */
+
     $provisionedActivities = array("specs","mugs","sausage rolls");
     $specCount = 0;
     $mugsCount = 0;
@@ -15,7 +21,7 @@
     $goodCount = 1;
     echo "<br>";
     do
-    {   
+    {
         $aGood = rand(0,2);
         switch ($provisionedActivities[$aGood])
         {
