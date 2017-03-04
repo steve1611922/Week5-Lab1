@@ -12,7 +12,7 @@
     // php code goes here
     $query = $_GET["query"];
     $type = $_GET["type"];
-    echo "The query is " . $query . "and the type is " . $cat;
+    echo "The query is " . $query . "and the type is " . $type;
 ?>
 </p>
 </body>
