@@ -1,4 +1,13 @@
-<?php
+<! DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>action_page</title>
+</head>
+<body>
+<p>
+    <?php
+    // php code goes here
     $f_uname = $_POST["uname"];
     $f_pws = $_POST["pws"];
     echo $f_uname.$f_pws;
@@ -18,4 +27,10 @@
     foreach ($_COOKIE as $cookie_name => $cookie_value) {
         print "$cookie_name = $cookie_value <br/>";
     }
-?> 
+?>
+</p>
+</body>
+</html>
+
+
+
