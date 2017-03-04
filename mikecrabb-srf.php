@@ -5,16 +5,21 @@
 </head> 
 <body>
  <?php
-if ($_SERVER["REQUEST_METHOD"] === "GET"){
+if ($_SERVER["REQUEST_METHOD"] === "GET")
+{
 ?>
-    // execute if requested using HTTP GET Method 
+    <!--execute if requested using HTTP GET Method -->
     <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
-        <label>Forename</label> <input type="text" name="forename" title="forename"> 
-        <label>Surname</label> <input type="text" name="surname" title="surname"> 
-        <p><input type="submit" value="Submit"></p> 
+        <fieldset>
+            <legend>Enter your details</legend>
+            <label>Forename</label> <input type="text" name="forename" title="forename"> 
+            <label>Surname</label> <input type="text" name="surname" title="surname"> 
+            <input type="submit" value="Submit">
+        </fieldset>
     </form>
+
     <?php
-}?>
+}
 elseif ($_SERVER["REQUEST_METHOD"] === "POST")
 { 
     // execute if requested using HTTP POST Method 
