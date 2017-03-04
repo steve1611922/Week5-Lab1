@@ -8,6 +8,7 @@
 <p>Week 5 Tutorials</p><br>
 <a href="intro-i.php">Intro to PHP Activity I</a><br>
 <a href="intro-ii.php">Intro to PHP Activity II</a><br>
+<a href="intro-iii.php">Intro to PHP Activity III</a><br>
 <a href="intro-vi.php">Intro to PHP  - Activity VI</a><br>
 <a href="intro.php">Intro to PHP  - Activity VII</a><br>
 <a href="cs-act1.php">Sessions and Cookies - Activity 1</a><br>
@@ -39,35 +40,6 @@
         /* I don’t get printed either
         and neither do I */
 
-        
-        /* // the original array
-        $provisionedActivities = array("specs","mugs","sausage rolls");
-        echo "The original array...";
-        foreach($provisionedActivities as $x)
-            { print "<p>$x</p>"; }
-        // hugs not mugs
-        $provisionedActivities[1] = "hugs";
-        echo "The hugs not mugs...";
-        foreach($provisionedActivities as $x)
-        { print "<p>$x</p>"; }
-        // No sausages
-        $provisionedActivities[2] = "";
-        echo "No more sausage rolls...";
-        foreach($provisionedActivities as $x)
-        { print "<p>$x</p>"; }
-        $provisionedActivities = array("specs","mugs","sausage rolls");
-        for ($i = 1; $i < 31; $i=$i + 4)
-            {$y = $i + 1;
-                echo "<br>On the ".($i)." of the month no products are available.<br>";
-                foreach($provisionedActivities as $x)
-                {
-                    echo "On the ".($y)." of the month ".$x." are available.<br>";
-                    if ($y > 29) {break;}
-                    $y ++;
-                    echo "On the " .($i+1). " of the month".$provisionedActivities[$i+1]."are available.<br>";
-                    echo "On the " .($i+2). " of the month".$provisionedActivities[$i+2]."are available.<br>";
-                }
-            } */
         $provisionedActivities = array("specs","mugs","sausage rolls");
         $specCount = 0;
         $mugsCount = 0;
