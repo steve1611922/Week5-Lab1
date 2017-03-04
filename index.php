@@ -46,6 +46,7 @@
         // Cookies
         // list all the cookies...
         echo "<br>";
+        echo " ** All the cookies **";
         foreach ($_COOKIE as $cookie_name => $cookie_value)
             {
                 print "$cookie_name = $cookie_value <br/>";
