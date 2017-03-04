@@ -6,6 +6,20 @@
 </head>
 <body>
 <p>
+<?php
+if (isset($_COOKIE["access_level"]))
+{
+    echo "Your access level is " . $_COOKIE["access_level"];
+}
+
+//displayAccessLevelInfo($_COOKIE["access_level"]);
+echo "All the cookies... <br>";
+foreach ($_COOKIE as $cookie_name => $cookie_value) {
+    print "$cookie_name = $cookie_value <br/>";
+}
+?>
+</p>
+<p>
 <form action="action_page.php" method="post" id="login">
     <fieldset>
         <legend>Enter your username and password.</legend>
@@ -16,24 +30,7 @@
         <input type="submit" value="Submit"><br>
     </fieldset>
 </form>
-<?php
-    echo "Hello ".$uname;
-    if (isset($_COOKIE["access_level"]))
-    {
-        echo "Your access level is " . $_COOKIE["access_level"];
-    }
-    else
-    {
-        echo "You are are not logged in";
-    }
-    //displayAccessLevelInfo($_COOKIE["access_level"]);
-    echo "Done.";
-echo "<br>";
-echo "All the cookies... <br>";
-foreach ($_COOKIE as $cookie_name => $cookie_value) {
-    print "$cookie_name = $cookie_value <br/>";
-}
-?>
+
 </p>
 </body>
 </html>

@@ -17,8 +17,8 @@
         setcookie("customer",$f_uname);
     } else {
         echo "Deleting cookies...";
-        setcookie('steve','',1);
-        setcookie('pws','',1);
+        setcookie("access_level","",time()-3600);
+        setcookie("customer","",time()-3600);
         echo "Username or Password error.";
     }
     // Cookies
