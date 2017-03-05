@@ -27,6 +27,22 @@ if (isset($_POST['submit'])) {
 
         $sql = "select id,username,password from login where password='$password' AND username='$username'";
         $query = sqlsrv_query ($conn, $sql);
+        if (!$query)
+        {
+            print("Select failed with error:\n");
+            foreach (sqlsrv_errors() as $error)
+            {
+                echo "SQLSTATE: " . $error['SQLSTATE'] . "<br />";
+                echo "code: " . $error['code'] . "<br />";
+                echo "message: " . $error['message'] . "<br />";
+            }
+        }
+        else
+        {
+            while ($row = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
+                echo $row['id'] . ", " . $row['username'] . ", " . $row['password'] . "\n"."<br>";
+            }
+        }
         $rows = sqlsrv_num_rows($query);
         echo "rows:".$rows;
         echo "conn".$conn;
