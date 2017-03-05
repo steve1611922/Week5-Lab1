@@ -55,7 +55,7 @@ echo "<br>";
         print("Table row created.\n");
     }
     */
-    $sql = "select id, username, password from login "; //where username='daffy' and password='duck'";
+    $sql = "select id, username, password from login where username='daffy' and password='duck'";
     $query = sqlsrv_query ($conn, $sql);
     /* Retrieve each row as an associative array and display the results.*/
     if (!$query)
