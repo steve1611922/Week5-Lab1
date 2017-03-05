@@ -42,8 +42,7 @@ echo "<br>";
           }
       // print("   ".mssql_get_last_message()."\n");
   } else {
-      print("Table fyi_links created.\n");
+      print("Table login created.\n");
   }
-
   mssql_close($conn);
 ?>
