@@ -25,11 +25,10 @@ if (isset($_POST['submit'])) {
      //   $db = mysql_select_db("company", $connection);
 // SQL query to fetch information of registerd users and finds user match.
 
-        $sql = "select * from login where password='$password' AND username='$username'";
+        $sql = "select id,username,password from login where password='$password' AND username='$username'";
         $query = sqlsrv_query ($conn, $sql);
-        //$query = mysql_query("select * from login where password='$password' AND username='$username'", $connection);
         $rows = sqlsrv_num_rows($query);
-        //$rows = mysql_num_rows($query);
+        echo $rows;
         if ($rows == 1) {
             $_SESSION['login_user']=$username; // Initializing Session
             header("location: profile.php"); // Redirecting To Other Page
