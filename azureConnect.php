@@ -39,5 +39,3 @@ echo "<br>".$conn;
 
   mssql_close($conn);
 ?>
-
-?>
