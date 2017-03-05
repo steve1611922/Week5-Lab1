@@ -27,7 +27,9 @@
 
     // Finally, destroy the session.
     session_destroy();
+    echo "The session has been KILLED.";
     ?>
+    <br><a href="cs-act2.php">Click here to return to Sessions - Activity 2</a>
 </p>
 </body>
 </html>
