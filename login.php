@@ -42,11 +42,11 @@ if (isset($_POST['submit'])) {
                 echo $row['id'] . ", " . $row['username'] . ", " . $row['password'] . "\n"."<br>";
             }
         }
-        $rows = sqlsrv_num_rows($query);
+        //$rows = sqlsrv_num_rows($query);
         echo "rows:".$rows;
         echo "conn".$conn;
         echo "query:".$query;
-        if (!$rows) {
+        if (!$query) {
             $error = "Username or Password is invalid";
             echo $username.$password;
         } else {
