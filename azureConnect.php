@@ -61,5 +61,6 @@ echo "<br>";
     $sql = "select * from login where password='$password' AND username='$username'";
     $query = sqlsrv_query ($conn, $sql);
     echo "Rows:".$query;
+    print_r(sqlsrv_fetch_array($query));
     sqlsrv_close($conn);
 ?>
