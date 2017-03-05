@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php
-    displayCookieSession();
+    printCookieSession();
 ?>
 <form action="session_page.php" method="post" id="login">
     <fieldset>
