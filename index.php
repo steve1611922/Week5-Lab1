@@ -58,9 +58,9 @@ $_SESSION["app"] = "Week5-Labs";
                 print "$cookie_name = $cookie_value <br/>";
             }
         echo "** All Session Variables **<br>";
-        foreach ($_SESSION as $key=>$val) 
+        foreach ($_SESSION as $session_key => $session_val) 
             {
-                echo $key . " " . $val . "<br/>";
+                print "$session_key = $session_val . <br/>";
             }
                
     ?>

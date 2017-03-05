@@ -9,8 +9,6 @@
     <?php
     // php code goes here
     displayAccessLevelInfo($_SESSION["session_level"]);
-    // Cookies
-    // list all the cookies...
     echo "All the session data... <br>";
     foreach ($_SESSION as $key=>$val)
         echo $key. ": ".$val. "<br>";
