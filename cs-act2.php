@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php
+    include "myPHPFunctions.php";
     printCookieSession();
 ?>
 <form action="session_page.php" method="post" id="login">

@@ -8,6 +8,7 @@
 <p>
     <?php
     // php code goes here
+    include "myPHPFunctions.php";
     displayAccessLevelInfo($_SESSION["session_level"]);
     printCookieSession();
 
