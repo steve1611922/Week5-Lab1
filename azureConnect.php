@@ -42,7 +42,7 @@ echo "<br>";
   } else {
       print("Table login created.\n");
   }
-    $sql = "INSERT INTO login (id,username,password) VALUES (5,'horrible', 'henry')";
+    /*$sql = "INSERT INTO login (id,username,password) VALUES (5,'horrible', 'henry')";
     $res = sqlsrv_query ($conn, $sql);
     if (!$res) {
         print("Insert failed with error:\n");
@@ -54,8 +54,8 @@ echo "<br>";
     } else {
         print("Table row created.\n");
     }
-
-    $sql = "select id, username, password from login where id=1";
+    */
+    $sql = "select id, username, password from login where username='daffy' and password='duck'";
     $query = sqlsrv_query ($conn, $sql);
     /* Retrieve each row as an associative array and display the results.*/
     if (!$query)
