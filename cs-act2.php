@@ -9,7 +9,7 @@
     <?php
     echo "All the session data... <br>";
     foreach ($_SESSION as $key=>$val)
-        echo $key. ": ".$val. "<br>";
+    {echo $key. ": ".$val. "<br>";}
     ?>
 </p>
 <p>

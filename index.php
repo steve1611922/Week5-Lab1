@@ -46,23 +46,22 @@
         // I don't! I'm a comment.
         /* I don’t get printed either
         and neither do I */
-     
-        //use unset to remove previous winners
-        //use isset to test for empty array element (previous winner) before picking next winner
-        // Cookies
-        // list all the cookies...
-        echo "<br>";
-        echo " ** All the cookies **<br>";
-        foreach ($_COOKIE as $cookie_name => $cookie_value)
-            {
+
+        displaycookieSession();
+
+        function displaycookieSession()
+        {
+            // list all the cookies and session key value pairs
+            echo "<br>";
+            echo " ** All the cookies **<br>";
+            foreach ($_COOKIE as $cookie_name => $cookie_value) {
                 print "$cookie_name = $cookie_value <br/>";
             }
-        echo "** All Session Variables **<br>";
-        foreach ($_SESSION as $session_key => $session_val) 
-            {
+            echo "** All Session Variables **<br>";
+            foreach ($_SESSION as $session_key => $session_val) {
                 print "$session_key = $session_val . <br/>";
             }
-               
+        }
     ?>
 </p>
 </body>
