@@ -44,6 +44,9 @@ echo "<br>";
   } else {
       print("Table login created.\n");
   }
-  //mssql_close($conn);
-  sqlsrv_close($conn);
+    $sql = "INSERT INTO login (id,username,password) VALUES (1,'daffy', 'duck')";
+    $res = sqlsrv_query ($conn, $sql);
+    echo $res;
+
+    sqlsrv_close($conn);
 ?>
