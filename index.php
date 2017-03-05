@@ -47,9 +47,9 @@
         /* I don’t get printed either
         and neither do I */
 
-        displaycookieSession();
+        displayCookieSession();
 
-        function displaycookieSession()
+        function displayCookieSession()
         {
             // list all the cookies and session key value pairs
             echo "<br>";

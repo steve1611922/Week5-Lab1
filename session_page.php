@@ -11,8 +11,8 @@
     $_SESSION["session_level"] = "standarduser";
     $_SESSION["customer"] = $_POST["uname"];
 
-    echo "<br>Session level:".$_SESSION["session_level"];
-    echo "<br>Session customer".$_SESSION["customer"];
+    displayCookieSession();
+    
     echo "<br>";
     echo "You can check your session data by visiting this link<br>";
     print( '<a href="session-homepage.php">Check session data</a>' );

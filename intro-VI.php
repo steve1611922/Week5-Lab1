@@ -7,6 +7,8 @@
 <body>
 <p>
     <?php
+    //use unset to remove previous winners
+    //use isset to test for empty array element (previous winner) before picking next winner
     // php code goes here
     $players = array("Tom", "Dick", "Harry", "Pinky", "Perky","Jerry", "Daffy", "Bugs_Bunny", "Foghorn Leghorn");
     $provisionedActivities = array("specs","mugs","sausage rolls");
