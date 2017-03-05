@@ -24,8 +24,8 @@
 <a href="cs-act2.php">Sessions - Activity 2</a><br>
 <p>
     <?php
-        displayCookieSession();
-    function displayCookieSession()
+        printCookieSession();
+    function printCookieSession()
     {
         // list all the cookies and session key value pairs
         echo "<br>";

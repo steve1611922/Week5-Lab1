@@ -9,7 +9,7 @@
     <?php
     // php code goes here
     displayAccessLevelInfo($_SESSION["session_level"]);
-    displayCookieSession();
+    printCookieSession();
 
     function displaySessionInfo($access_level)
     {
