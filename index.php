@@ -1,5 +1,6 @@
 <php?
 session_start();
+$_SESSION["app"] = "Week5-Labs";
 ?>
 <! DOCTYPE html >
 <html lang="en">
@@ -56,6 +57,12 @@ session_start();
             {
                 print "$cookie_name = $cookie_value <br/>";
             }
+        echo "** All Session Variables **<br>";
+        foreach ($_SESSION as $key=>$val) 
+            {
+                echo $key . " " . $val . "<br/>";
+            }
+               
     ?>
 </p>
 </body>
