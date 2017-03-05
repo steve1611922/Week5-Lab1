@@ -29,6 +29,8 @@ if (isset($_POST['submit'])) {
         $query = sqlsrv_query ($conn, $sql);
         $rows = sqlsrv_num_rows($conn);
         echo "rows:".$rows;
+        echo "conn".$conn;
+        echo "query:".$query;
         if ($rows == 1) {
             $_SESSION['login_user']=$username; // Initializing Session
             header("location: profile.php"); // Redirecting To Other Page
