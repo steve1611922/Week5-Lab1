@@ -5,11 +5,9 @@
     <title>Week5-Sessions - Activity 2</title>
 </head>
 <body>
-<p>
-    <?php
-        displayCookieSession();
-    ?>
-</p>
+<?php
+    displayCookieSession();
+?>
 <form action="session_page.php" method="post" id="login">
     <fieldset>
         <legend>Enter your username and password.</legend>
