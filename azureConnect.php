@@ -44,7 +44,7 @@ echo "<br>";
   } else {
       print("Table login created.\n");
   }
-    /*$sql = "INSERT INTO login (id,username,password) VALUES (2,'donald', 'duck')";
+    $sql = "INSERT INTO login (id,username,password) VALUES (3,'pinky', 'perky')";
     $res = sqlsrv_query ($conn, $sql);
     if (!$res) {
         print("Insert failed with error:\n");
@@ -57,7 +57,7 @@ echo "<br>";
     } else {
         print("Table row created.\n");
     }
-    */
+
     $sql = "select * from login where password='$password' AND username='$username'";
     $query = sqlsrv_query ($conn, $sql);
     echo "Rows:".$query;
