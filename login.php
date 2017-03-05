@@ -24,6 +24,7 @@ if (isset($_POST['submit'])) {
 // Selecting Database
      //   $db = mysql_select_db("company", $connection);
 // SQL query to fetch information of registerd users and finds user match.
+        echo $username.$password;
         $sql = "select * from login where password='$password' AND username='$username'";
         $query = sqlsrv_query ($conn, $sql);
         //$query = mysql_query("select * from login where password='$password' AND username='$username'", $connection);
