@@ -44,5 +44,6 @@ echo "<br>";
   } else {
       print("Table login created.\n");
   }
-  mssql_close($conn);
+  //mssql_close($conn);
+  sqlsrv_close($conn);
 ?>
