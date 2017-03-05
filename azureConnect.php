@@ -71,7 +71,7 @@ echo "<br>";
         else
         {
             while ($row = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
-                echo $row['id'] . ", " . $row['username'] . ", " . $row['password'] . "\n";
+                echo $row['id'] . ", " . $row['username'] . ", " . $row['password'] . "\n"."<br>";
             }
         }
 sqlsrv_close($conn);
