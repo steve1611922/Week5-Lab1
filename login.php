@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
         echo "rows:".$rows;
         echo "conn".$conn;
         echo "query:".$query;
-        if ($rows == 1) {
+        if ($rows === 1) {
             $_SESSION['login_user']=$username; // Initializing Session
             header("location: profile.php"); // Redirecting To Other Page
         } else {
