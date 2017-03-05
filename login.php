@@ -46,12 +46,12 @@ if (isset($_POST['submit'])) {
         echo "rows:".$rows;
         echo "conn".$conn;
         echo "query:".$query;
-        if ($rows === 1) {
-            $_SESSION['login_user']=$username; // Initializing Session
-            header("location: profile.php"); // Redirecting To Other Page
-        } else {
+        if (!$rows) {
             $error = "Username or Password is invalid";
             echo $username.$password;
+        } else {
+            $_SESSION['login_user']=$username; // Initializing Session
+            header("location: profile.php"); // Redirecting To Other Page
         }
         //mysql_close($connection); // Closing Connection
         sqlsrv_close($conn); // Closing Connection
