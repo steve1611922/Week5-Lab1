@@ -44,7 +44,7 @@ echo "<br>";
   } else {
       print("Table login created.\n");
   }
-    $sql = "INSERT INTO login (id,username,password) VALUES (4,'horrible', 'henry')";
+    $sql = "INSERT INTO login (id,username,password) VALUES (5,'horrible', 'henry')";
     $res = sqlsrv_query ($conn, $sql);
     if (!$res) {
         print("Insert failed with error:\n");
