@@ -16,8 +16,6 @@ $connectionInfo = array("UID" => "swcadmin@rgu-labs", "pwd" => "Crabby123",
 $serverName = "tcp:rgu-labs.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 echo "I seem to be connected... yay";
-echo "<br>".$conn;
-echo "<br>".$serverName;
 echo "<br>";
 
 //create a table
@@ -53,12 +51,11 @@ echo "<br>";
                 echo "code: ".$error[ 'code']."<br />";
                 echo "message: ".$error[ 'message']."<br />";
     }
-    // print("   ".mssql_get_last_message()."\n");
     } else {
         print("Table row created.\n");
     }
 
-    $sql = "select id, username, password from login where password='$password' AND username='$username'";
+    $sql = "select id, username, password from login where id=1";
     $query = sqlsrv_query ($conn, $sql);
     /* Retrieve each row as an associative array and display the results.*/
     if (!$query)
