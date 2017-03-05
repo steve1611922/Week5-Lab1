@@ -44,9 +44,19 @@ echo "<br>";
   } else {
       print("Table login created.\n");
   }
-    $sql = "INSERT INTO login (id,username,password) VALUES (1,'daffy', 'duck')";
+    $sql = "INSERT INTO login (id,username,password) VALUES (2,'donald', 'duck')";
     $res = sqlsrv_query ($conn, $sql);
-    echo $res;
+    if (!$res) {
+        print("Insert failed with error:\n");
+            foreach( sqlsrv_errors() as $error ) {
+                echo "SQLSTATE: ".$error[ 'SQLSTATE']."<br />";
+                echo "code: ".$error[ 'code']."<br />";
+                echo "message: ".$error[ 'message']."<br />";
+    }
+    // print("   ".mssql_get_last_message()."\n");
+    } else {
+        print("Table row created.\n");
+    }
 
     sqlsrv_close($conn);
 ?>
