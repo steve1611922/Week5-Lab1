@@ -1,5 +1,5 @@
 <?php
-// PHP Data Objects(PDO) Sample Code:
+/*// PHP Data Objects(PDO) Sample Code:
 try {
 $conn = new PDO("sqlsrv:server = tcp:rgu-labs.database.windows.net,1433; 
     Database = labs-db", "swcadmin", "Crabby123");
@@ -9,7 +9,7 @@ catch (PDOException $e) {
 print("Error connecting to SQL Server.");
 die(print_r($e));
 }
-
+*/
 // SQL Server Extension Sample Code:
 $connectionInfo = array("UID" => "swcadmin@rgu-labs", "pwd" => "Crabby123",
     "Database" => "labs-db", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
@@ -19,10 +19,6 @@ echo "I seem to be connected... yay";
 echo "<br>";
 
 //create a table
-
-//  $con = mssql_connect('LOCALHOST','sa','FYIcenter');
-//  mssql_select_db('FyiCenterData', $con);
-
   # creating a new table
   $sql = "CREATE TABLE login ("
       . " id INT NOT NULL PRIMARY KEY"
@@ -38,7 +34,6 @@ echo "<br>";
               echo "code: ".$error[ 'code']."<br />";
               echo "message: ".$error[ 'message']."<br />";
           }
-      // print("   ".mssql_get_last_message()."\n");
   } else {
       print("Table login created.\n");
   }
@@ -55,24 +50,22 @@ echo "<br>";
         print("Table row created.\n");
     }
     */
-    $sql = "select id, username, password from login where username='daffy' and password='duck'";
+    $sql = "select id, username, password from login";  // where username='daffy' and password='duck'";
     $query = sqlsrv_query ($conn, $sql);
     /* Retrieve each row as an associative array and display the results.*/
     if (!$query)
     {
         print("Select failed with error:\n");
-        foreach (sqlsrv_errors() as $error)
-        {
+        foreach (sqlsrv_errors() as $error) {
             echo "SQLSTATE: " . $error['SQLSTATE'] . "<br />";
             echo "code: " . $error['code'] . "<br />";
             echo "message: " . $error['message'] . "<br />";
         }
     }
-        else
-        {
+        else {
             while ($row = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
                 echo $row['id'] . ", " . $row['username'] . ", " . $row['password'] . "\n"."<br>";
             }
         }
-sqlsrv_close($conn);
+sqlsrv_close($conn); // close connection
 ?>

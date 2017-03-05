@@ -7,45 +7,22 @@ if (isset($_POST['submit'])) {
     }
     else
     {
-// Define $username and $password
+        // Define $username and $password
         $username=$_POST['username'];
         $password=$_POST['password'];
-// Establishing Connection with Server by passing server_name, user_id and password as a parameter
+        // Establishing Connection with Server
         $connectionInfo = array("UID" => "swcadmin@rgu-labs", "pwd" => "Crabby123",
             "Database" => "labs-db", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
         $serverName = "tcp:rgu-labs.database.windows.net,1433";
         $conn = sqlsrv_connect($serverName, $connectionInfo);
-// To protect MySQL injection for Security purpose
+        // To protect SQL injection for Security purpose
         $username = stripslashes($username);
         $password = stripslashes($password);
-     //   $username = mysql_real_escape_string($username);
-     //   $password = mysql_real_escape_string($password);
-// Selecting Database
-     //   $db = mysql_select_db("company", $connection);
-// SQL query to fetch information of registerd users and finds user match.
-
+     //   $username = mysql_real_escape_string($username);   // need to find equivalent
+     //   $password = mysql_real_escape_string($password);   // need to find equivalent
+        // SQL query to fetch information of registerd users and finds user match.
         $sql = "select id,username,password from login where password='$password' AND username='$username'";
         $query = sqlsrv_query ($conn, $sql);
-        if (!$query)
-        {
-            print("Select failed with error:\n");
-            foreach (sqlsrv_errors() as $error)
-            {
-                echo "SQLSTATE: " . $error['SQLSTATE'] . "<br />";
-                echo "code: " . $error['code'] . "<br />";
-                echo "message: " . $error['message'] . "<br />";
-            }
-        }
-        else
-        {
-            while ($row = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
-                echo $row['id'] . ", " . $row['username'] . ", " . $row['password'] . "\n"."<br>";
-            }
-        }
-        //$rows = sqlsrv_num_rows($query);
-        echo "rows:".$rows;
-        echo "conn".$conn;
-        echo "query:".$query;
         if (!$query) {
             $error = "Username or Password is invalid";
             echo $username.$password;
