@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <title>Session Homepage</title>
 </head>
 <body>
 <p>
     <?php
     // php code goes here
     include "myPHPFunctions.php";
-    displayAccessLevelInfo($_SESSION["session_level"]);
+    displaySessionInfo($_SESSION["session_level"]);
     printCookieSession();
 
     function displaySessionInfo($access_level)
