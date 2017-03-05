@@ -58,12 +58,24 @@ echo "<br>";
         print("Table row created.\n");
     }
 
-    $sql = "select * from login where password='$password' AND username='$username'";
+    $sql = "select id, username, password from login where password='$password' AND username='$username'";
     $query = sqlsrv_query ($conn, $sql);
     /* Retrieve each row as an associative array and display the results.*/
-    while( $row = sqlsrv_fetch_array( $query, SQLSRV_FETCH_ASSOC))
+    if (!$query)
     {
-        echo $row['id'].", ".$row['username'].", ".$row['password']."\n";
+        print("Select failed with error:\n");
+        foreach (sqlsrv_errors() as $error)
+        {
+            echo "SQLSTATE: " . $error['SQLSTATE'] . "<br />";
+            echo "code: " . $error['code'] . "<br />";
+            echo "message: " . $error['message'] . "<br />";
+        }
     }
+        else
+        {
+            while ($row = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
+                echo $row['id'] . ", " . $row['username'] . ", " . $row['password'] . "\n";
+            }
+        }
 sqlsrv_close($conn);
 ?>
