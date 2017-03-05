@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
 
         $sql = "select id,username,password from login where password='$password' AND username='$username'";
         $query = sqlsrv_query ($conn, $sql);
-        $rows = sqlsrv_num_rows($conn);
+        $rows = sqlsrv_num_rows($query);
         echo "rows:".$rows;
         echo "conn".$conn;
         echo "query:".$query;
