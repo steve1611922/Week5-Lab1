@@ -24,44 +24,18 @@
 <a href="cs-act2.php">Sessions - Activity 2</a><br>
 <p>
     <?php
-        echo "Hello World";
-        echo "<br>";
-        echo "Hello," . " " . "world" . "!" ." Coded another way";
-        echo "<br>";
-        echo 5 * 7;
-        echo "<br>";
-        $myname = "Steve Charlesworth";
-        $myage = 50;
-        echo "My name is " . $myname . " and I am " . $myage;
-        echo "<br>";
-        $name = "Steve";
-        if ($name == "Simon") {
-            print "I know you!";
-        }
-        else {
-            print "Who are you?";
-        }
-        echo "<br>";
-        echo "I get printed! <br>";
-        // I don't! I'm a comment.
-        /* I don’t get printed either
-        and neither do I */
-
         displayCookieSession();
-
-        function displayCookieSession()
-        {
-            // list all the cookies and session key value pairs
-            echo "<br>";
-            echo " ** All the cookies **<br>";
-            foreach ($_COOKIE as $cookie_name => $cookie_value) {
-                print "$cookie_name = $cookie_value <br/>";
-            }
-            echo "** All Session Variables **<br>";
-            foreach ($_SESSION as $session_key => $session_val) {
-                print "$session_key = $session_val . <br/>";
-            }
-        }
+    function displayCookieSession()
+    {
+        // list all the cookies and session key value pairs
+        echo "<br>";
+        echo " ** All the cookies **<br>";
+        foreach ($_COOKIE as $cookie_name => $cookie_value)
+            { print "$cookie_name = $cookie_value <br/>"; }
+        echo "** All Session Variables **<br>";
+        foreach ($_SESSION as $session_key => $session_val)
+            { print "$session_key = $session_val . <br/>"; }
+    }
     ?>
 </p>
 </body>

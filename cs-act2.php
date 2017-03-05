@@ -10,7 +10,6 @@
         displayCookieSession();
     ?>
 </p>
-<p>
 <form action="session_page.php" method="post" id="login">
     <fieldset>
         <legend>Enter your username and password.</legend>
@@ -21,7 +20,5 @@
         <input type="submit" value="Submit"><br>
     </fieldset>
 </form>
-
-</p>
 </body>
 </html>
