@@ -23,6 +23,7 @@
 <a href="cs-act1.php">Cookies - Activity 1</a><br>
 <a href="cs-act2.php">Sessions - Activity 2</a>  <a href="kill-session.php">Kill Session</a><br>
 <a href="formget.php">Formhget.com login form with session</a><br>
+<a href="azureConnect.php">connect to Azure DB</a><br>
 
 <p>
     <?php
