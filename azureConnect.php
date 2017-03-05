@@ -18,6 +18,7 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 echo "I seem to be connected... yay";
 echo "<br>".$conn;
 echo "<br>".$serverName;
+echo "<br>";
 
 //create a table
 
@@ -30,11 +31,16 @@ echo "<br>".$serverName;
       . ", username VARCHAR(255) NOT NULL"
       . ", password VARCHAR(255) NOT NULL"
       . ")";
-    $res = sqlsrv_query ( $conn, $sql );
+    $res = sqlsrv_query ($conn, $sql);
 //  $res = mssql_query($sql,"$connectionInfo");
   if (!$res) {
       print("Table creation failed with error:\n");
-      print("   ".mssql_get_last_message()."\n");
+          foreach( sqlsrv_errors() as $error ) {
+              echo "SQLSTATE: ".$error[ 'SQLSTATE']."<br />";
+              echo "code: ".$error[ 'code']."<br />";
+              echo "message: ".$error[ 'message']."<br />";
+          }
+      // print("   ".mssql_get_last_message()."\n");
   } else {
       print("Table fyi_links created.\n");
   }
