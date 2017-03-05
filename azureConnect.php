@@ -16,6 +16,28 @@ $connectionInfo = array("UID" => "swcadmin@rgu-labs", "pwd" => "Crabby123",
 $serverName = "tcp:rgu-labs.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 echo "I seem to be connected... yay";
-echo $conn;
+echo "<br>".$conn;
+
+//create a table
+
+//  $con = mssql_connect('LOCALHOST','sa','FYIcenter');
+//  mssql_select_db('FyiCenterData', $con);
+
+  # creating a new table
+  $sql = "CREATE TABLE login ("
+      . " id INT(10) NOT NULL PRIMARY KEY"
+      . ", username VARCHAR(255) NOT NULL"
+      . ", password VARCHAR(255) NOT NULL"
+      . ")";
+  $res = mssql_query($sql,$conn);
+  if (!$res) {
+      print("Table creation failed with error:\n");
+      print("   ".mssql_get_last_message()."\n");
+  } else {
+      print("Table fyi_links created.\n");
+  }
+
+  mssql_close($conn);
+?>
 
 ?>
