@@ -1,6 +1,6 @@
-<php?
-session_start();
-$_SESSION["app"] = "Week5-Labs";
+<?php
+    session_start();
+    $_SESSION["app"] = "Week5-Labs";
 ?>
 <! DOCTYPE html >
 <html lang="en">
