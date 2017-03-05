@@ -27,7 +27,7 @@ echo "<br>";
 
   # creating a new table
   $sql = "CREATE TABLE login ("
-      . " id INT(10) NOT NULL PRIMARY KEY"
+      . " id INT NOT NULL PRIMARY KEY"
       . ", username VARCHAR(255) NOT NULL"
       . ", password VARCHAR(255) NOT NULL"
       . ")";
