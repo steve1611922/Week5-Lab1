@@ -7,6 +7,7 @@
 <body>
 <p>
     <?php
+    session_start();
     //Set session values
     $_SESSION["session_level"] = "standarduser";
     $_SESSION["customer"] = $_POST["uname"];

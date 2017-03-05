@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php
+    session_start();
     include "myPHPFunctions.php";
     printCookieSession();
 ?>

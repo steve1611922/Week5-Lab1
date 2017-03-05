@@ -7,6 +7,7 @@
 <body>
 <p>
     <?php
+    session_start();
     // php code goes here
     include "myPHPFunctions.php";
     displaySessionInfo($_SESSION["session_level"]);
