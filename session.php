@@ -1,6 +1,5 @@
 <?php
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
-//$connection = mysql_connect("localhost", "root", "");
 $connectionInfo = array("UID" => "swcadmin@rgu-labs", "pwd" => "Crabby123",
     "Database" => "labs-db", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:rgu-labs.database.windows.net,1433";
